@@ -1,177 +1,377 @@
 <div align="center">
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=260&color=0:0F172A,30:10B981,70:F59E0B,100:0F172A&text=DEVENDRA%20DIWAKAR&fontSize=55&fontAlignY=38&animation=fadeIn&fontColor=ffffff&desc=AI%2FML%20Engineer%20%7C%20Backend%20%2B%20Cloud%20Builder&descAlignY=58"/>
-</div>
 
-<div align="center">
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=280&color=0:020617,30:0EA5E9,60:06B6D4,100:020617&text=SYSTEM%20ONLINE&fontSize=42&fontAlignY=32&animation=fadeIn&fontColor=F8FAFC&desc=DEVENDRA%20DIWAKAR%20%E2%80%94%20AI%20INFRASTRUCTURE%20ENGINEER&descAlignY=52&descSize=18"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1200&color=10B981&center=true&vCenter=true&width=900&lines=AI%2FML+Engineer+in+the+making;Backend+%2B+Cloud+Systems+Builder;AWS+%7C+Lambda+%7C+DynamoDB+%7C+S3;LangChain+%7C+RAG+%7C+Gemini+API;Turning+data+into+deployed+systems.;Build.+Deploy.+Learn.+Repeat."/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2600&pause=900&color=38BDF8&center=true&vCenter=true&width=800&lines=Booting+AI+Infrastructure+Stack...;Compiling+Production-Grade+Systems...;Status%3A+Operational;Region%3A+ap-south-1;Mission%3A+Deploy+Production+AI+Systems"/>
 
 <br>
 
-<a href="mailto:devdiwakar27@gmail.com"><img src="https://img.shields.io/badge/Email-10B981?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-<a href="https://www.linkedin.com/in/devendra-divakar-9649a32a4/"><img src="https://img.shields.io/badge/LinkedIn-F59E0B?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<img src="https://img.shields.io/badge/STATUS-OPERATIONAL-10B981?style=for-the-badge&labelColor=020617"/>
+<img src="https://img.shields.io/badge/REGION-AP--SOUTH--1-0EA5E9?style=for-the-badge&labelColor=020617"/>
+<img src="https://img.shields.io/badge/UPTIME-100%25-38BDF8?style=for-the-badge&labelColor=020617"/>
 
-<br><br>
+</div>
 
-<img src="https://komarev.com/ghpvc/?username=Devendra2306&label=PROFILE+VIEWS&color=10B981&style=for-the-badge"/>
-<img src="https://img.shields.io/github/followers/Devendra2306?style=for-the-badge&color=F59E0B"/>
+<br>
+
+---
+
+<div align="center">
+
+## ▌ 01 — SYSTEM OVERVIEW
+
+</div>
+
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+
+**OPERATOR**
+```
+Devendra Diwakar
+```
+**CLASSIFICATION**
+```
+AI/ML Engineer · Backend + Cloud Builder
+```
+**CURRENT OBJECTIVE**
+```
+AI/ML + Backend Internship — 2026–27 Cycle
+```
+
+</td>
+<td width="50%" valign="top">
+
+**DEPLOYMENT REGION**
+```
+ap-south-1 (AWS)
+```
+**PRIMARY STACK**
+```
+Python · FastAPI · AWS · LangChain · React
+```
+**CURRENT BUILD**
+```
+AI Document Intelligence Platform — Phase 2
+```
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+> **Mission Statement**
+> Closing the gap between *"cool AI demo"* and *"thing that runs reliably in production."*
+> RAG pipelines that retrieve the right chunk. Lambda triggers that don't silently fail. Systems that ship end-to-end — infra, API, model, UI.
 
 </div>
 
 ---
 
-### About
+<div align="center">
 
-BTech CS/IT, third year. I spend most of my time in the gap between "cool AI demo" and
-"thing that runs reliably in production" — RAG pipelines that actually retrieve the right
-chunk, Lambda triggers that don't silently fail, dashboards that stay fresh without
-babysitting.
+## ▌ 02 — LIVE SYSTEM STATUS
 
-Right now I'm building toward AI/ML + backend internships for the 2026–27 cycle, and
-positioning myself as **the engineer who ships the AI system end-to-end** — infra, API,
-model, UI.
+</div>
 
-```text
-Python                  ██████████ 100%
-FastAPI / Node          █████████░  90%
-AWS (Lambda/S3/DDB)     ████████░░  80%
-LLM / RAG               █████████░  85%
-React                   █████████░  85%
-System Design           ██████░░░░  60%
-Docker                  █████░░░░░  50%
+<table width="100%" align="center">
+<tr>
+<td align="center" width="16%"><b>CLOUD</b><br><img src="https://img.shields.io/badge/ONLINE-10B981?style=flat-square&labelColor=020617"/></td>
+<td align="center" width="16%"><b>AI PIPELINE</b><br><img src="https://img.shields.io/badge/ACTIVE-0EA5E9?style=flat-square&labelColor=020617"/></td>
+<td align="center" width="16%"><b>BACKEND</b><br><img src="https://img.shields.io/badge/HEALTHY-10B981?style=flat-square&labelColor=020617"/></td>
+<td align="center" width="16%"><b>DATABASE</b><br><img src="https://img.shields.io/badge/SYNCED-06B6D4?style=flat-square&labelColor=020617"/></td>
+<td align="center" width="16%"><b>MONITORING</b><br><img src="https://img.shields.io/badge/RUNNING-38BDF8?style=flat-square&labelColor=020617"/></td>
+<td align="center" width="16%"><b>SECURITY</b><br><img src="https://img.shields.io/badge/PASS-10B981?style=flat-square&labelColor=020617"/></td>
+</tr>
+</table>
+
+---
+
+<div align="center">
+
+## ▌ 03 — COMMAND CENTER
+
+</div>
+
+```bash
+root@devendra:~$ ./mission_status.sh
+
+> CURRENT MISSION
+  Building production-ready AI systems using
+  AWS Lambda, FastAPI, LangChain and React.
+
+> DEPLOYMENT TARGET
+  AI/ML Internship — 2026–27
+
+> ACTIVE FOCUS
+  Serverless document intelligence · RAG retrieval
+  accuracy · Cloud-native system design
+
+[OK] All subsystems nominal.
 ```
 
 ---
 
-## 🧠 Flagship: AI Document Intelligence Platform
+<div align="center">
 
-A serverless document pipeline on AWS, built in deliberate phases — Phase 1 is live,
-Phase 2 is next.
+## ▌ 04 — FLAGSHIP DEPLOYMENT
 
-<img src="https://img.shields.io/badge/Status-Phase%201%20Complete-10B981?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Cloud-AWS-F59E0B?style=for-the-badge&logo=amazon-aws"/>
-<img src="https://img.shields.io/badge/Frontend-React-10B981?style=for-the-badge&logo=react"/>
+### AI Document Intelligence Platform
+
+<img src="https://img.shields.io/badge/PHASE_1-COMPLETE-10B981?style=for-the-badge&labelColor=020617"/>
+<img src="https://img.shields.io/badge/PHASE_2-IN_PROGRESS-F59E0B?style=for-the-badge&labelColor=020617"/>
+<img src="https://img.shields.io/badge/CLOUD-AWS-0EA5E9?style=for-the-badge&logo=amazon-aws&labelColor=020617"/>
+
+</div>
+
+A serverless document intelligence pipeline, built in deliberate phases on AWS — designed to take a raw uploaded document all the way to searchable, structured insight.
 
 ```text
-React (drag-and-drop upload)
-      │
-      ▼ presigned URL
-     S3  ──▶ Lambda trigger ──▶ DynamoDB (UUID + status)
-      ▲                              │
-      └────── API Gateway ◀──────────┘
-              (client polls for status)
+   React (Drag & Drop Upload)
+            │
+            ▼  presigned URL
+        API Gateway
+            │
+            ▼
+           S3  ───────────▶  Lambda Trigger
+            │                     │
+            ▼                     ▼
+        Textract            DynamoDB (UUID + Status)
+     (Phase 2 — WIP)              │
+            │                     ▼
+            ▼              Client Status Poll
+     Embedding Layer
+            │
+            ▼
+      Vector Database
+            │
+            ▼
+          LLM Layer
+            │
+            ▼
+       Insight Dashboard
 ```
 
-| Layer | Choice |
-|---|---|
-| Frontend | React, drag & drop upload |
-| Storage | S3, presigned URLs |
-| Compute | AWS Lambda |
-| State | DynamoDB (per-document UUID + status) |
-| API | API Gateway |
-| Region | ap-south-1 |
+<table width="100%">
+<tr><th>MODULE</th><th>SPECIFICATION</th></tr>
+<tr><td>Architecture</td><td>Event-driven, serverless, per-document state tracking via UUID</td></tr>
+<tr><td>Scaling</td><td>Lambda concurrency scales per upload — no persistent compute cost</td></tr>
+<tr><td>Security</td><td>Presigned S3 URLs — no direct client-to-bucket credentials exposed</td></tr>
+<tr><td>Performance</td><td>Async polling via API Gateway, no long-held client connections</td></tr>
+<tr><td>Challenge</td><td>Keeping retrieval precision high once Phase 2 introduces OCR noise</td></tr>
+</table>
 
-**Roadmap**
-- [x] Phase 1 — upload + tracking infrastructure
-- [ ] Phase 2 — Textract extraction
-- [ ] Phase 3 — semantic search + insights, multi-tenant auth
+**ROADMAP**
 
----
-
-## 🚀 Other things I've shipped
-
-**🌫️ AQI Monitoring Pipeline** — live air quality tracking, from historical batch loads
-to real-time polling.
-`Python → DuckDB → Dash → OpenAQ API`
-Live map, trend charts, pollutant heatmap, data-freshness checks — deployed on Render's
-free tier, which forced some real lessons in memory-constrained design.
-
-**☁️ CloudVault** — a Drive-style file storage platform, built to actually understand
-auth and relational modeling rather than just wire up a template.
-`React → Node.js → PostgreSQL → Prisma → AWS S3`
+- [x] `PHASE 1` — Upload + tracking infrastructure (S3 · Lambda · DynamoDB · API Gateway)
+- [ ] `PHASE 2` — Textract extraction pipeline
+- [ ] `PHASE 3` — Semantic search, insight generation, multi-tenant auth
 
 ---
 
-## 🛠 Toolbox
+<div align="center">
 
-<table>
-<tr><td><b>Languages</b></td><td>
-<img src="https://img.shields.io/badge/Python-10B981?style=flat-square&logo=python&logoColor=white"/>
-<img src="https://img.shields.io/badge/Java-F59E0B?style=flat-square&logo=openjdk&logoColor=white"/>
-<img src="https://img.shields.io/badge/JavaScript-10B981?style=flat-square&logo=javascript&logoColor=white"/>
-<img src="https://img.shields.io/badge/C++-F59E0B?style=flat-square&logo=c%2B%2B&logoColor=white"/>
-</td></tr>
-<tr><td><b>AI/ML</b></td><td>
-<img src="https://img.shields.io/badge/LangChain-10B981?style=flat-square&logo=langchain&logoColor=white"/>
+## ▌ 05 — ACTIVE DEPLOYMENTS
+
+</div>
+
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+
+**DEPLOYMENT: CLOUDVAULT**
+<br>
+<img src="https://img.shields.io/badge/STATUS-PRODUCTION-10B981?style=flat-square&labelColor=020617"/>
+
+```
+Stack   React · Node.js · PostgreSQL
+        Prisma · AWS S3
+
+Mission Drive-inspired cloud storage
+        platform, built to actually
+        understand auth and relational
+        modeling — not just wire up
+        a template.
+```
+
+</td>
+<td width="50%" valign="top">
+
+**DEPLOYMENT: AQI MONITORING PLATFORM**
+<br>
+<img src="https://img.shields.io/badge/STATUS-OPERATIONAL-0EA5E9?style=flat-square&labelColor=020617"/>
+
+```
+Stack   Python · DuckDB · Dash
+        OpenAQ API
+
+Mission Real-time + historical air
+        quality analytics. Live map,
+        trend charts, pollutant
+        heatmap, data-freshness
+        checks — deployed on a
+        memory-constrained free tier.
+```
+
+</td>
+</tr>
+</table>
+
+---
+
+<div align="center">
+
+## ▌ 06 — TECH ECOSYSTEM
+
+</div>
+
+<table width="100%">
+<tr><td width="20%"><b>ARTIFICIAL INTELLIGENCE</b></td><td>
+<img src="https://img.shields.io/badge/LangChain-0EA5E9?style=flat-square&logo=langchain&logoColor=white"/>
+<img src="https://img.shields.io/badge/RAG-06B6D4?style=flat-square"/>
+<img src="https://img.shields.io/badge/Gemini_API-38BDF8?style=flat-square&logo=googlegemini&logoColor=white"/>
 <img src="https://img.shields.io/badge/PyTorch-F59E0B?style=flat-square&logo=pytorch&logoColor=white"/>
-<img src="https://img.shields.io/badge/Pandas-10B981?style=flat-square&logo=pandas&logoColor=white"/>
-<img src="https://img.shields.io/badge/NumPy-F59E0B?style=flat-square&logo=numpy&logoColor=white"/>
 </td></tr>
-<tr><td><b>Frontend</b></td><td>
-<img src="https://img.shields.io/badge/React-10B981?style=flat-square&logo=react&logoColor=white"/>
-<img src="https://img.shields.io/badge/TailwindCSS-F59E0B?style=flat-square&logo=tailwind-css&logoColor=white"/>
-<img src="https://img.shields.io/badge/Vite-10B981?style=flat-square&logo=vite&logoColor=white"/>
+<tr><td><b>BACKEND</b></td><td>
+<img src="https://img.shields.io/badge/FastAPI-0EA5E9?style=flat-square&logo=fastapi&logoColor=white"/>
+<img src="https://img.shields.io/badge/Node.js-10B981?style=flat-square&logo=node.js&logoColor=white"/>
+<img src="https://img.shields.io/badge/Express-06B6D4?style=flat-square&logo=express&logoColor=white"/>
+<img src="https://img.shields.io/badge/Django-38BDF8?style=flat-square&logo=django&logoColor=white"/>
 </td></tr>
-<tr><td><b>Backend</b></td><td>
-<img src="https://img.shields.io/badge/Node.js-F59E0B?style=flat-square&logo=node.js&logoColor=white"/>
-<img src="https://img.shields.io/badge/Express-10B981?style=flat-square&logo=express&logoColor=white"/>
-<img src="https://img.shields.io/badge/FastAPI-F59E0B?style=flat-square&logo=fastapi&logoColor=white"/>
-<img src="https://img.shields.io/badge/Django-10B981?style=flat-square&logo=django&logoColor=white"/>
+<tr><td><b>CLOUD & DEVOPS</b></td><td>
+<img src="https://img.shields.io/badge/AWS_Lambda-F59E0B?style=flat-square&logo=awslambda&logoColor=white"/>
+<img src="https://img.shields.io/badge/S3-0EA5E9?style=flat-square&logo=amazons3&logoColor=white"/>
+<img src="https://img.shields.io/badge/API_Gateway-06B6D4?style=flat-square&logo=amazonapigateway&logoColor=white"/>
+<img src="https://img.shields.io/badge/Docker-38BDF8?style=flat-square&logo=docker&logoColor=white"/>
+<img src="https://img.shields.io/badge/Render-10B981?style=flat-square&logo=render&logoColor=white"/>
+<img src="https://img.shields.io/badge/Vercel-F8FAFC?style=flat-square&logo=vercel&logoColor=black"/>
 </td></tr>
-<tr><td><b>Cloud & DevOps</b></td><td>
-<img src="https://img.shields.io/badge/AWS-F59E0B?style=flat-square&logo=amazon-aws&logoColor=white"/>
-<img src="https://img.shields.io/badge/Docker-10B981?style=flat-square&logo=docker&logoColor=white"/>
-<img src="https://img.shields.io/badge/Render-F59E0B?style=flat-square&logo=render&logoColor=white"/>
-<img src="https://img.shields.io/badge/Vercel-10B981?style=flat-square&logo=vercel&logoColor=white"/>
+<tr><td><b>FRONTEND</b></td><td>
+<img src="https://img.shields.io/badge/React-0EA5E9?style=flat-square&logo=react&logoColor=white"/>
+<img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"/>
+<img src="https://img.shields.io/badge/Vite-38BDF8?style=flat-square&logo=vite&logoColor=white"/>
 </td></tr>
-<tr><td><b>Database</b></td><td>
-<img src="https://img.shields.io/badge/PostgreSQL-F59E0B?style=flat-square&logo=postgresql&logoColor=white"/>
-<img src="https://img.shields.io/badge/DynamoDB-10B981?style=flat-square&logo=amazon-dynamodb&logoColor=white"/>
-<img src="https://img.shields.io/badge/Prisma-F59E0B?style=flat-square&logo=prisma&logoColor=white"/>
-<img src="https://img.shields.io/badge/DuckDB-10B981?style=flat-square&logo=duckdb&logoColor=white"/>
+<tr><td><b>DATABASES</b></td><td>
+<img src="https://img.shields.io/badge/PostgreSQL-0EA5E9?style=flat-square&logo=postgresql&logoColor=white"/>
+<img src="https://img.shields.io/badge/DynamoDB-F59E0B?style=flat-square&logo=amazondynamodb&logoColor=white"/>
+<img src="https://img.shields.io/badge/Prisma-06B6D4?style=flat-square&logo=prisma&logoColor=white"/>
+<img src="https://img.shields.io/badge/DuckDB-38BDF8?style=flat-square&logo=duckdb&logoColor=white"/>
+</td></tr>
+<tr><td><b>LANGUAGES</b></td><td>
+<img src="https://img.shields.io/badge/Python-0EA5E9?style=flat-square&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-F59E0B?style=flat-square&logo=javascript&logoColor=white"/>
+<img src="https://img.shields.io/badge/Java-06B6D4?style=flat-square&logo=openjdk&logoColor=white"/>
+<img src="https://img.shields.io/badge/C++-38BDF8?style=flat-square&logo=c%2B%2B&logoColor=white"/>
 </td></tr>
 </table>
 
 ---
 
-## 🎯 2026–27 Goals
+<div align="center">
 
-- [x] Ship Phase 1 of the AI Document Intelligence Platform
-- [x] Build a deployable RAG project as a portfolio centerpiece
-- [ ] Textract integration (Phase 2)
-- [ ] Go deeper on AWS + system design fundamentals
-- [ ] Land an AI/ML engineering internship
+## ▌ 07 — MISSION LOG
 
----
+</div>
 
-## 📊 GitHub Analytics
-
-<p align="center">
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Devendra2306&show_icons=true&theme=holi&hide_border=true"/>
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Devendra2306&layout=compact&theme=holi&hide_border=true"/>
-</p>
-
-<p align="center">
-<img src="https://streak-stats.demolab.com?user=Devendra2306&theme=green-orange&hide_border=true"/>
-</p>
-
-<p align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Devendra2306&theme=react-dark&color=10B981&line=F59E0B&point=ffffff"/>
-</p>
+```text
+2024 ─┬─ Frontend Fundamentals
+      │
+      ├─ Backend Systems (Node · FastAPI)
+      │
+      ├─ Cloud Infrastructure (AWS)
+      │
+      ├─ Applied AI (LangChain · RAG)
+      │
+      ├─ Production Systems (CloudVault · AQI Pipeline)
+      │
+NOW ──┴─ AI Document Intelligence Platform (Phase 2)
+```
 
 ---
-
-## 🤝 Let's Connect
-
-<p align="center">
-<a href="mailto:devdiwakar27@gmail.com"><img src="https://img.shields.io/badge/Email-10B981?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-<a href="https://www.linkedin.com/in/devendra-divakar-9649a32a4/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-F59E0B?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-</p>
 
 <div align="center">
 
-### "Build. Deploy. Learn. Repeat."
+## ▌ 08 — SYSTEM METRICS
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=120&color=0:0F172A,50:10B981,100:0F172A&section=footer"/>
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=Devendra2306&show_icons=true&theme=react&bg_color=020617&title_color=38BDF8&icon_color=0EA5E9&text_color=F8FAFC&border_color=0EA5E9&hide_border=false"/>
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Devendra2306&layout=compact&theme=react&bg_color=020617&title_color=38BDF8&text_color=F8FAFC&border_color=0EA5E9&hide_border=false"/>
+
+<br>
+
+<img src="https://streak-stats.demolab.com?user=Devendra2306&theme=dark&background=020617&stroke=0EA5E9&ring=38BDF8&fire=F59E0B&currStreakLabel=F8FAFC&border=0EA5E9"/>
+
+<br>
+
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Devendra2306&bg_color=020617&color=38BDF8&line=0EA5E9&point=F8FAFC&area_color=06B6D4&area=true&hide_border=true"/>
+
+</div>
+
+---
+
+<div align="center">
+
+## ▌ 09 — RADAR: ACTIVE LEARNING
+
+</div>
+
+<table width="100%">
+<tr>
+<td align="center" width="14%"><b>AWS</b><br><sub>tracking</sub></td>
+<td align="center" width="14%"><b>System Design</b><br><sub>tracking</sub></td>
+<td align="center" width="14%"><b>Distributed Systems</b><br><sub>tracking</sub></td>
+<td align="center" width="14%"><b>Advanced RAG</b><br><sub>tracking</sub></td>
+<td align="center" width="14%"><b>LLMOps</b><br><sub>tracking</sub></td>
+<td align="center" width="14%"><b>Vector Search</b><br><sub>tracking</sub></td>
+<td align="center" width="14%"><b>Multi-Agent AI</b><br><sub>tracking</sub></td>
+</tr>
+</table>
+
+---
+
+<div align="center">
+
+## ▌ 10 — COMMUNICATION CHANNEL
+
+<table>
+<tr>
+<td align="center">
+<a href="mailto:devdiwakar27@gmail.com">
+<img src="https://img.shields.io/badge/EMAIL-devdiwakar27%40gmail.com-0EA5E9?style=for-the-badge&logo=gmail&logoColor=white&labelColor=020617"/>
+</a>
+</td>
+</tr>
+<tr>
+<td align="center">
+<a href="https://www.linkedin.com/in/devendra-divakar-9649a32a4/">
+<img src="https://img.shields.io/badge/LINKEDIN-Connect-06B6D4?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=020617"/>
+</a>
+</td>
+</tr>
+<tr>
+<td align="center">
+<a href="https://github.com/Devendra2306">
+<img src="https://img.shields.io/badge/GITHUB-Devendra2306-38BDF8?style=for-the-badge&logo=github&logoColor=white&labelColor=020617"/>
+</a>
+</td>
+</tr>
+</table>
+
+</div>
+
+---
+
+<div align="center">
+
+```text
+> Build.
+> Deploy.
+> Scale.
+> Repeat.
+
+SYSTEM STATUS: ONLINE
+```
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=120&color=0:020617,50:0EA5E9,100:020617&section=footer"/>
 
 </div>
