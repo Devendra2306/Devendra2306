@@ -80,12 +80,6 @@ React (drag-and-drop upload)
 
 ## 🚀 Other things I've shipped
 
-**🔎 RAG Document Q&A** — ask questions over your own documents, grounded in what's
-actually in them.
-`LangChain → ChromaDB → Gemini API → FastAPI → React`
-Where I learned how chunking strategy changes retrieval quality, and why prompt
-grounding matters more than a bigger model.
-
 **🌫️ AQI Monitoring Pipeline** — live air quality tracking, from historical batch loads
 to real-time polling.
 `Python → DuckDB → Dash → OpenAQ API`
