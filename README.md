@@ -24,31 +24,21 @@
 <tr>
 <td width="50%" valign="top">
 
-OPERATOR
-
-Devendra Diwakar
-
-CLASSIFICATION
-
-AI/ML Engineer · Backend + Cloud Builder
-
-CURRENT OBJECTIVE
-
+**OPERATOR**<br>
+Devendra Diwakar<br><br>
+**CLASSIFICATION**<br>
+AI/ML Engineer · Backend + Cloud Builder<br><br>
+**CURRENT OBJECTIVE**<br>
 AI/ML + Backend Internship — 2026–27 Cycle
 
 </td>
 <td width="50%" valign="top">
 
-DEPLOYMENT REGION
-
-ap-south-1 (AWS)
-
-PRIMARY STACK
-
-Python · FastAPI · AWS · LangChain · React
-
-CURRENT BUILD
-
+**DEPLOYMENT REGION**<br>
+ap-south-1 (AWS)<br><br>
+**PRIMARY STACK**<br>
+Python · FastAPI · AWS · LangChain · React<br><br>
+**CURRENT BUILD**<br>
 AI Document Intelligence Platform — Phase 2
 
 </td>
@@ -57,7 +47,10 @@ AI Document Intelligence Platform — Phase 2
 
 <div align="center">
 
-Mission StatementClosing the gap between "cool AI demo" and "thing that runs reliably in production."RAG pipelines that retrieve the right chunk. Lambda triggers that don't silently fail. Systems that ship end-to-end — infra, API, model, UI.
+**Mission Statement**
+
+Closing the gap between "cool AI demo" and "thing that runs reliably in production."<br>
+RAG pipelines that retrieve the right chunk. Lambda triggers that don't silently fail. Systems that ship end-to-end — infra, API, model, UI.
 
 </div>
 
@@ -84,6 +77,7 @@ Mission StatementClosing the gap between "cool AI demo" and "thing that runs rel
 
 </div>
 
+```
 root@devendra:~$ ./mission_status.sh
 
 > CURRENT MISSION
@@ -98,34 +92,62 @@ root@devendra:~$ ./mission_status.sh
   accuracy · Cloud-native system design
 
 [OK] All subsystems nominal.
+```
 
 <div align="center">
 
 ▌ 04 — FLAGSHIP DEPLOYMENT
 
+**AI Document Intelligence Platform**
+
+<img src="https://img.shields.io/badge/PHASE_1-COMPLETE-10B981?style=for-the-badge&labelColor=020617"/>
+<img src="https://img.shields.io/badge/PHASE_2-IN_PROGRESS-F59E0B?style=for-the-badge&labelColor=020617"/>
+<img src="https://img.shields.io/badge/CLOUD-AWS-0EA5E9?style=for-the-badge&logo=amazon-aws&labelColor=020617"/>
+
 </div>
 
-CloudVault — Production Cloud Storage Platform
+A serverless document intelligence pipeline, built in deliberate phases on AWS — designed to take a raw uploaded document all the way to searchable, structured insight.
 
-<img src="https://img.shields.io/badge/STATUS-PRODUCTION-10B981?style=for-the-badge&labelColor=020617"/>
-<img src="https://img.shields.io/badge/BACKEND-NODE.JS-0EA5E9?style=for-the-badge&labelColor=020617"/>
-<img src="https://img.shields.io/badge/STORAGE-AWS_S3-F59E0B?style=for-the-badge&labelColor=020617"/>
+```
+   React (Drag & Drop Upload)
+            │
+            ▼  presigned URL
+        API Gateway
+            │
+            ▼
+           S3  ───────────▶  Lambda Trigger
+            │                     │
+            ▼                     ▼
+   Extraction Layer          DynamoDB (UUID + Status)
+     (Phase 2 — WIP)              │
+            │                     ▼
+            ▼              Client Status Poll
+     Embedding Layer
+            │
+            ▼
+      Vector Database
+            │
+            ▼
+          LLM Layer
+            │
+            ▼
+       Insight Dashboard
+```
 
-A production-ready cloud storage platform inspired by Google Drive, featuring secure authentication, AWS S3 file storage, PostgreSQL, Prisma ORM, and a responsive React frontend.
+<table width="100%">
+<tr><th>MODULE</th><th>SPECIFICATION</th></tr>
+<tr><td>Architecture</td><td>Event-driven, serverless, per-document state tracking via UUID</td></tr>
+<tr><td>Scaling</td><td>Lambda concurrency scales per upload — no persistent compute cost</td></tr>
+<tr><td>Security</td><td>Presigned S3 URLs — no direct client-to-bucket credentials exposed</td></tr>
+<tr><td>Performance</td><td>Async polling via API Gateway, no long-held client connections</td></tr>
+<tr><td>Challenge</td><td>Keeping retrieval precision high once Phase 2 introduces extraction noise</td></tr>
+</table>
 
-Highlights
+**ROADMAP**
 
-Secure JWT Authentication
-
-AWS S3 Uploads & Downloads
-
-PostgreSQL + Prisma
-
-File Sharing & Management
-
-Responsive Dashboard
-
-Fully deployed and working without known blocking bugs
+- PHASE 1 — Upload + tracking infrastructure (S3 · Lambda · DynamoDB · API Gateway)
+- PHASE 2 — Document extraction & processing pipeline
+- PHASE 3 — Semantic search, insight generation, multi-tenant auth
 
 <div align="center">
 
@@ -137,31 +159,22 @@ Fully deployed and working without known blocking bugs
 <tr>
 <td width="50%" valign="top">
 
-DEPLOYMENT: CLOUDVAULT<br><img src="https://img.shields.io/badge/STATUS-PRODUCTION-10B981?style=flat-square&labelColor=020617"/>
-
-Stack   React · Node.js · PostgreSQL
-        Prisma · AWS S3
-
-Mission Drive-inspired cloud storage
-        platform, built to actually
-        understand auth and relational
-        modeling — not just wire up
-        a template.
+**DEPLOYMENT: CLOUDVAULT**<br>
+<img src="https://img.shields.io/badge/STATUS-PRODUCTION-10B981?style=flat-square&labelColor=020617"/><br><br>
+**Stack**<br>
+React · Node.js · PostgreSQL · Prisma · AWS S3<br><br>
+**Mission**<br>
+Drive-inspired cloud storage platform, built to actually understand auth and relational modeling — not just wire up a template.
 
 </td>
 <td width="50%" valign="top">
 
-DEPLOYMENT: AQI MONITORING PLATFORM<br><img src="https://img.shields.io/badge/STATUS-OPERATIONAL-0EA5E9?style=flat-square&labelColor=020617"/>
-
-Stack   Python · DuckDB · Dash
-        OpenAQ API
-
-Mission Real-time + historical air
-        quality analytics. Live map,
-        trend charts, pollutant
-        heatmap, data-freshness
-        checks — deployed on a
-        memory-constrained free tier.
+**DEPLOYMENT: AQI MONITORING PLATFORM**<br>
+<img src="https://img.shields.io/badge/STATUS-OPERATIONAL-0EA5E9?style=flat-square&labelColor=020617"/><br><br>
+**Stack**<br>
+Python · DuckDB · Dash · OpenAQ API<br><br>
+**Mission**<br>
+Real-time + historical air quality analytics. Live map, trend charts, pollutant heatmap, data-freshness checks — deployed on a memory-constrained free tier.
 
 </td>
 </tr>
@@ -219,6 +232,7 @@ Mission Real-time + historical air
 
 </div>
 
+```
 2024 ─┬─ Frontend Fundamentals
       │
       ├─ Backend Systems (Node · FastAPI)
@@ -229,7 +243,8 @@ Mission Real-time + historical air
       │
       ├─ Production Systems (CloudVault · AQI Pipeline)
       │
-NOW ──┴─ CloudVault Production Platform
+ NOW ─┴─ AI Document Intelligence Platform (Phase 2)
+```
 
 <div align="center">
 
@@ -303,7 +318,7 @@ NOW ──┴─ CloudVault Production Platform
 > Scale.
 > Repeat.
 
-SYSTEM STATUS: ONLINE
+**SYSTEM STATUS: ONLINE**
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=120&color=0:020617,50:0EA5E9,100:020617&section=footer"/>
 
