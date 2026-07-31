@@ -39,7 +39,7 @@ ap-south-1 (AWS)<br><br>
 **PRIMARY STACK**<br>
 Python · FastAPI · AWS · LangChain · React<br><br>
 **CURRENT BUILD**<br>
-AI Document Intelligence Platform — Phase 2
+RAG Document Q&A System
 
 </td>
 </tr>
@@ -49,8 +49,7 @@ AI Document Intelligence Platform — Phase 2
 
 **Mission Statement**
 
-Closing the gap between "cool AI demo" and "thing that runs reliably in production."<br>
-RAG pipelines that retrieve the right chunk. Lambda triggers that don't silently fail. Systems that ship end-to-end — infra, API, model, UI.
+I build the layer between "AI demo" and "thing that runs in production" — retrieval pipelines that pull the right chunk, cloud infra that doesn't fall over under load, and systems shipped end-to-end: infra, API, model, UI.
 
 </div>
 
@@ -81,15 +80,15 @@ RAG pipelines that retrieve the right chunk. Lambda triggers that don't silently
 root@devendra:~$ ./mission_status.sh
 
 > CURRENT MISSION
-  Building production-ready AI systems using
-  AWS Lambda, FastAPI, LangChain and React.
+  Shipping production-grade AI systems with
+  FastAPI, LangChain, AWS and React.
 
 > DEPLOYMENT TARGET
-  AI/ML Internship — 2026–27
+  AI/ML + Backend Internship — 2026–27
 
 > ACTIVE FOCUS
-  Serverless document intelligence · RAG retrieval
-  accuracy · Cloud-native system design
+  Retrieval accuracy · cloud-native system design
+  serverless architecture on AWS
 
 [OK] All subsystems nominal.
 ```
@@ -98,56 +97,45 @@ root@devendra:~$ ./mission_status.sh
 
 ▌ 04 — FLAGSHIP DEPLOYMENT
 
-**AI Document Intelligence Platform**
+**RAG Document Q&A System**
 
-<img src="https://img.shields.io/badge/PHASE_1-COMPLETE-10B981?style=for-the-badge&labelColor=020617"/>
-<img src="https://img.shields.io/badge/PHASE_2-IN_PROGRESS-F59E0B?style=for-the-badge&labelColor=020617"/>
-<img src="https://img.shields.io/badge/CLOUD-AWS-0EA5E9?style=for-the-badge&logo=amazon-aws&labelColor=020617"/>
+<img src="https://img.shields.io/badge/STATUS-LIVE-10B981?style=for-the-badge&labelColor=020617"/>
+<img src="https://img.shields.io/badge/RETRIEVAL-LANGCHAIN-0EA5E9?style=for-the-badge&labelColor=020617"/>
 
 </div>
 
-A serverless document intelligence pipeline, built in deliberate phases on AWS — designed to take a raw uploaded document all the way to searchable, structured insight.
+A retrieval-augmented question-answering system — upload a document, ask it questions in plain language, get answers grounded in the actual text instead of a hallucinated guess.
 
 ```
-   React (Drag & Drop Upload)
-            │
-            ▼  presigned URL
-        API Gateway
+   React (Upload + Chat UI)
             │
             ▼
-           S3  ───────────▶  Lambda Trigger
-            │                     │
-            ▼                     ▼
-   Extraction Layer          DynamoDB (UUID + Status)
-     (Phase 2 — WIP)              │
-            │                     ▼
-            ▼              Client Status Poll
-     Embedding Layer
+        FastAPI Backend
             │
             ▼
-      Vector Database
+   Chunking + Embedding
             │
             ▼
-          LLM Layer
+       ChromaDB (Vector Store)
             │
             ▼
-       Insight Dashboard
+   LangChain Retrieval Chain
+            │
+            ▼
+        Gemini API (LLM)
+            │
+            ▼
+     Grounded Answer + Sources
 ```
 
 <table width="100%">
 <tr><th>MODULE</th><th>SPECIFICATION</th></tr>
-<tr><td>Architecture</td><td>Event-driven, serverless, per-document state tracking via UUID</td></tr>
-<tr><td>Scaling</td><td>Lambda concurrency scales per upload — no persistent compute cost</td></tr>
-<tr><td>Security</td><td>Presigned S3 URLs — no direct client-to-bucket credentials exposed</td></tr>
-<tr><td>Performance</td><td>Async polling via API Gateway, no long-held client connections</td></tr>
-<tr><td>Challenge</td><td>Keeping retrieval precision high once Phase 2 introduces extraction noise</td></tr>
+<tr><td>Architecture</td><td>Retrieval-augmented generation — chunk, embed, retrieve, then generate</td></tr>
+<tr><td>Retrieval</td><td>ChromaDB similarity search feeding a LangChain retrieval chain</td></tr>
+<tr><td>Grounding</td><td>Answers cite retrieved chunks instead of relying on model recall alone</td></tr>
+<tr><td>Interface</td><td>React chat UI backed by a FastAPI service layer</td></tr>
+<tr><td>Challenge</td><td>Tuning chunk size and retrieval-k to balance precision against context cost</td></tr>
 </table>
-
-**ROADMAP**
-
-- PHASE 1 — Upload + tracking infrastructure (S3 · Lambda · DynamoDB · API Gateway)
-- PHASE 2 — Document extraction & processing pipeline
-- PHASE 3 — Semantic search, insight generation, multi-tenant auth
 
 <div align="center">
 
@@ -217,6 +205,7 @@ Real-time + historical air quality analytics. Live map, trend charts, pollutant 
 <img src="https://img.shields.io/badge/DynamoDB-F59E0B?style=flat-square&logo=amazondynamodb&logoColor=white"/>
 <img src="https://img.shields.io/badge/Prisma-06B6D4?style=flat-square&logo=prisma&logoColor=white"/>
 <img src="https://img.shields.io/badge/DuckDB-38BDF8?style=flat-square&logo=duckdb&logoColor=white"/>
+<img src="https://img.shields.io/badge/ChromaDB-06B6D4?style=flat-square"/>
 </td></tr>
 <tr><td><b>LANGUAGES</b></td><td>
 <img src="https://img.shields.io/badge/Python-0EA5E9?style=flat-square&logo=python&logoColor=white"/>
@@ -243,7 +232,7 @@ Real-time + historical air quality analytics. Live map, trend charts, pollutant 
       │
       ├─ Production Systems (CloudVault · AQI Pipeline)
       │
- NOW ─┴─ AI Document Intelligence Platform (Phase 2)
+ NOW ─┴─ RAG Document Q&A System
 ```
 
 <div align="center">
