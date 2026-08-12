@@ -302,12 +302,7 @@ Real-time + historical air quality analytics. Live map, trend charts, pollutant 
 
 <div align="center">
 
-> Build.
-> Deploy.
-> Scale.
-> Repeat.
 
-**SYSTEM STATUS: ONLINE**
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=120&color=0:020617,50:0EA5E9,100:020617&section=footer"/>
 
