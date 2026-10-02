@@ -35,14 +35,14 @@ links:
 stack:
   AI: [Python, LangChain, RAG, ChromaDB, Gemini API, PyTorch]
   Backend: [FastAPI, Node.js, Express, Django, PostgreSQL, Prisma, DynamoDB]
-  Cloud: [AWS (Lambda, S3, API Gateway), Docker, Render, Vercel]
+  Cloud: ["AWS (Lambda, S3, API Gateway)", Docker, Render, Vercel]
   Frontend: [React, Vite, TailwindCSS]
   Languages: [Python, JavaScript, Java, C++]
 
 # Optional rich cards. `repo` = "owner/name". Fill in the real repo names once.
 # If a repo isn't found (typo / private) the card still renders from this file.
 projects:
-  - repo: Devendra2306/rag-document-qa      # <-- replace with real repo name
+  - repo: Devendra2306/CHAT-BOT-      # <-- replace with real repo name
     title: RAG Document Q&A
     summary: Upload a document, ask in plain language, get answers grounded in the text with cited sources.
     stack: [React, FastAPI, LangChain, ChromaDB, Gemini API]
@@ -53,7 +53,7 @@ projects:
     live: ""         # deployed URL
     demo: ""         # GIF/screenshot path, e.g. assets/rag-demo.gif
 
-  - repo: Devendra2306/cloudvault           # <-- replace
+  - repo: Devendra2306/cloudvault-storage           # <-- replace
     title: CloudVault
     summary: Drive-style cloud storage with auth, relational data modelling and S3-backed files.
     stack: [React, Node.js, PostgreSQL, Prisma, AWS S3]
@@ -63,7 +63,7 @@ projects:
     live: ""
     demo: ""
 
-  - repo: Devendra2306/aqi-monitoring       # <-- replace
+  - repo: Devendra2306/AIR-QUALITY       # <-- replace
     title: AQI Monitoring Platform
     summary: Real-time and historical air-quality analytics with a live map, trends and data-freshness checks.
     stack: [Python, DuckDB, Dash, OpenAQ API]

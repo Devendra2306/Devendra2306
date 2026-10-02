@@ -34,7 +34,7 @@
 <details open>
 <summary><b>Cloud</b></summary>
 <br>
-<img src="https://img.shields.io/badge/AWS%20%28Lambda-0EA5E9?style=for-the-badge"/> <img src="https://img.shields.io/badge/S3-0EA5E9?style=for-the-badge"/> <img src="https://img.shields.io/badge/API%20Gateway%29-0EA5E9?style=for-the-badge"/> <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/> <img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black"/> <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"/>
+<img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white"/> <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/> <img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black"/> <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"/>
 </details>
 
 <details open>
@@ -53,14 +53,14 @@
 ### 🚀 Featured Projects
 
 <div align="center">
-  <a href="https://github.com/Devendra2306/rag-document-qa">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Devendra2306&repo=rag-document-qa&theme=tokyonight&bg_color=020617&title_color=38BDF8&icon_color=0EA5E9&text_color=F8FAFC&border_color=0EA5E9" />
+  <a href="https://github.com/Devendra2306/CHAT-BOT-">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Devendra2306&repo=CHAT-BOT-&theme=tokyonight&bg_color=020617&title_color=38BDF8&icon_color=0EA5E9&text_color=F8FAFC&border_color=0EA5E9" />
   </a>
-  <a href="https://github.com/Devendra2306/cloudvault">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Devendra2306&repo=cloudvault&theme=tokyonight&bg_color=020617&title_color=38BDF8&icon_color=0EA5E9&text_color=F8FAFC&border_color=0EA5E9" />
+  <a href="https://github.com/Devendra2306/cloudvault-storage">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Devendra2306&repo=cloudvault-storage&theme=tokyonight&bg_color=020617&title_color=38BDF8&icon_color=0EA5E9&text_color=F8FAFC&border_color=0EA5E9" />
   </a>
-  <a href="https://github.com/Devendra2306/aqi-monitoring">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Devendra2306&repo=aqi-monitoring&theme=tokyonight&bg_color=020617&title_color=38BDF8&icon_color=0EA5E9&text_color=F8FAFC&border_color=0EA5E9" />
+  <a href="https://github.com/Devendra2306/AIR-QUALITY">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Devendra2306&repo=AIR-QUALITY&theme=tokyonight&bg_color=020617&title_color=38BDF8&icon_color=0EA5E9&text_color=F8FAFC&border_color=0EA5E9" />
   </a>
 </div>
 
