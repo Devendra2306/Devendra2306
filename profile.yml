@@ -1,0 +1,79 @@
+# =====================================================================
+# profile.yml  —  the ONLY file you ever edit by hand.
+# The script reads this + the GitHub API and rebuilds README.md.
+#
+# Adding a NEW project later (no editing needed at all):
+#   1. Write a one-line description on the GitHub repo
+#   2. Add the topic  "showcase"  to the repo
+#   3. Done. It appears on your profile on the next run (daily, or run manually).
+#
+# Want a richer card (highlights / live link / metrics)? Add it under
+# `projects:` below. Anything you write here overrides what GitHub says.
+# =====================================================================
+
+github: Devendra2306
+name: Devendra Diwakar
+headline: AI/ML & Backend Engineer
+tagline: >-
+  I build the layer between "AI demo" and "thing that runs in production" —
+  retrieval pipelines that return the right chunk, APIs that hold up under
+  load, and systems shipped end to end.
+
+open_to: AI/ML + Backend internships (2026–27)
+currently:
+  - "Building a RAG document Q&A system (FastAPI, LangChain, ChromaDB, Gemini)"
+  - "Learning: advanced RAG evaluation, LLMOps, system design"
+
+links:
+  email: devdiwakar27@gmail.com
+  # CHECK THIS URL: your old README says "divakar" but your name is "Diwakar"
+  linkedin: https://www.linkedin.com/in/devendra-divakar-9649a32a4/
+  portfolio: ""          # add a portfolio URL if you have one
+  resume: ""             # link to a PDF in this repo or Drive, e.g. resume.pdf
+
+# Compact stack. Keep each row short; recruiters skim.
+stack:
+  AI: [Python, LangChain, RAG, ChromaDB, Gemini API, PyTorch]
+  Backend: [FastAPI, Node.js, Express, Django, PostgreSQL, Prisma, DynamoDB]
+  Cloud: [AWS (Lambda, S3, API Gateway), Docker, Render, Vercel]
+  Frontend: [React, Vite, TailwindCSS]
+  Languages: [Python, JavaScript, Java, C++]
+
+# Optional rich cards. `repo` = "owner/name". Fill in the real repo names once.
+# If a repo isn't found (typo / private) the card still renders from this file.
+projects:
+  - repo: Devendra2306/rag-document-qa      # <-- replace with real repo name
+    title: RAG Document Q&A
+    summary: Upload a document, ask in plain language, get answers grounded in the text with cited sources.
+    stack: [React, FastAPI, LangChain, ChromaDB, Gemini API]
+    highlights:
+      - "Chunk -> embed -> retrieve -> generate pipeline; answers cite the retrieved chunks"
+      - "Tuned chunk size and retrieval-k to balance precision vs. context cost"
+    metrics: ""      # e.g. "hit-rate@4 = 0.82 on 40 hand-written questions"  (add real numbers!)
+    live: ""         # deployed URL
+    demo: ""         # GIF/screenshot path, e.g. assets/rag-demo.gif
+
+  - repo: Devendra2306/cloudvault           # <-- replace
+    title: CloudVault
+    summary: Drive-style cloud storage with auth, relational data modelling and S3-backed files.
+    stack: [React, Node.js, PostgreSQL, Prisma, AWS S3]
+    highlights:
+      - "Auth + per-user file ownership on a relational schema"
+    metrics: ""
+    live: ""
+    demo: ""
+
+  - repo: Devendra2306/aqi-monitoring       # <-- replace
+    title: AQI Monitoring Platform
+    summary: Real-time and historical air-quality analytics with a live map, trends and data-freshness checks.
+    stack: [Python, DuckDB, Dash, OpenAQ API]
+    highlights:
+      - "Runs on a memory-constrained free tier (DuckDB keeps it light)"
+    metrics: ""
+    live: ""
+    demo: ""
+
+settings:
+  max_projects: 4          # recruiters look at 2-4; keep it tight
+  recent_activity: 5       # number of recent public activity lines (0 = hide)
+  show_stats_card: true    # one github-readme-stats card, at the bottom

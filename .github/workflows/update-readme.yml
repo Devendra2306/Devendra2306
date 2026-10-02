@@ -1,0 +1,32 @@
+name: Update profile README
+
+on:
+  schedule:
+    - cron: "30 2 * * *"      # daily, 08:00 IST
+  workflow_dispatch:           # "Run workflow" button
+  push:
+    paths:
+      - profile.yml
+      - scripts/update_readme.py
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - run: python scripts/update_readme.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit if changed
+        run: |
+          git config user.name "profile-bot"
+          git config user.email "profile-bot@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet || (git commit -m "chore: refresh profile README" && git push)
