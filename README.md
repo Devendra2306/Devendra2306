@@ -1,61 +1,80 @@
-# Hi, I'm Devendra 👋
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=250&color=0:020617,50:0EA5E9,100:020617&text=Devendra%20Diwakar&fontSize=50&fontAlignY=35&animation=fadeIn&fontColor=F8FAFC&desc=AI/ML%20%26%20Backend%20Engineer&descAlignY=55&descSize=20"/>
 
-I build the layer between "AI demo" and "thing that runs in production" — retrieval pipelines that return the right chunk, APIs that hold up under load, and systems shipped end to end.
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=800&lines=Building+Production-Grade+AI+Systems;FastAPI+%E2%80%A2+LangChain+%E2%80%A2+AWS+%E2%80%A2+React;Bridging+the+gap+between+AI+Demos+%26+Production"/>
+  <br><br>
+  <img src="https://komarev.com/ghpvc/?username=Devendra2306&style=for-the-badge&label=Profile+Views&color=0ea5e9"/>
+</div>
+<br>
 
-<a href="https://github.com/Devendra2306?tab=followers"><img height="24" src="https://img.shields.io/badge/followers-5-24292f?style=flat-square&logo=github" alt="GitHub followers"/></a>
-<img height="24" src="https://komarev.com/ghpvc/?username=Devendra2306&style=flat-square&label=views&color=555555" alt="profile views"/>
+### 👨‍💻 About Me
 
-## 📌 Featured projects
+> I build the layer between "AI demo" and "thing that runs in production" — retrieval pipelines that return the right chunk, APIs that hold up under load, and systems shipped end to end.
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <b><a href="https://github.com/Devendra2306/rag-document-qa">RAG Document Q&A</a></b>
-      <a href="https://github.com/Devendra2306/rag-document-qa"><img height="18" src="https://img.shields.io/badge/-Public-lightgrey?style=flat-square" alt="Public"/></a><br/>
-      <sub>Upload a document, ask in plain language, get answers grounded in the text with cited sources.</sub><br/>
-      <img height="18" src="https://img.shields.io/badge/-React-lightgrey?style=flat-square" alt="React"/>
-      <a href="https://github.com/Devendra2306/rag-document-qa/stargazers"><img height="18" src="https://img.shields.io/github/stars/Devendra2306/rag-document-qa?style=social" alt="stars"/></a>
-      <a href="https://github.com/Devendra2306/rag-document-qa/forks"><img height="18" src="https://img.shields.io/github/forks/Devendra2306/rag-document-qa?style=social" alt="forks"/></a>
-    </td>
-    <td width="50%" valign="top">
-      <b><a href="https://github.com/Devendra2306/cloudvault">CloudVault</a></b>
-      <a href="https://github.com/Devendra2306/cloudvault"><img height="18" src="https://img.shields.io/badge/-Public-lightgrey?style=flat-square" alt="Public"/></a><br/>
-      <sub>Drive-style cloud storage with auth, relational data modelling and S3-backed files.</sub><br/>
-      <img height="18" src="https://img.shields.io/badge/-React-lightgrey?style=flat-square" alt="React"/>
-      <a href="https://github.com/Devendra2306/cloudvault/stargazers"><img height="18" src="https://img.shields.io/github/stars/Devendra2306/cloudvault?style=social" alt="stars"/></a>
-      <a href="https://github.com/Devendra2306/cloudvault/forks"><img height="18" src="https://img.shields.io/github/forks/Devendra2306/cloudvault?style=social" alt="forks"/></a>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <b><a href="https://github.com/Devendra2306/aqi-monitoring">AQI Monitoring Platform</a></b>
-      <a href="https://github.com/Devendra2306/aqi-monitoring"><img height="18" src="https://img.shields.io/badge/-Public-lightgrey?style=flat-square" alt="Public"/></a><br/>
-      <sub>Real-time and historical air-quality analytics with a live map, trends and data-freshness checks.</sub><br/>
-      <img height="18" src="https://img.shields.io/badge/-Python-3776AB?style=flat-square" alt="Python"/>
-      <a href="https://github.com/Devendra2306/aqi-monitoring/stargazers"><img height="18" src="https://img.shields.io/github/stars/Devendra2306/aqi-monitoring?style=social" alt="stars"/></a>
-      <a href="https://github.com/Devendra2306/aqi-monitoring/forks"><img height="18" src="https://img.shields.io/github/forks/Devendra2306/aqi-monitoring?style=social" alt="forks"/></a>
-    </td>
-    <td width="50%" valign="top"></td>
-  </tr>
-</table>
+- 🔭 I'm currently working on **Building a RAG document Q&A system (FastAPI, LangChain, ChromaDB, Gemini)**
+- 🔭 I'm currently working on **Learning: advanced RAG evaluation, LLMOps, system design**
+- 💼 Open to **AI/ML + Backend internships (2026–27)**
+- 📫 How to reach me: **devdiwakar27@gmail.com**
+- 🔗 Let's connect on [LinkedIn](https://www.linkedin.com/in/devendra-divakar-9649a32a4/)
 
-## What I'm building
+### 🛠️ Tech Stack & Skills
 
-I build the layer between AI demos and production-ready systems.
-My current focus includes:
+<details open>
+<summary><b>AI</b></summary>
+<br>
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white"/> <img src="https://img.shields.io/badge/RAG-06B6D4?style=for-the-badge"/> <img src="https://img.shields.io/badge/ChromaDB-4C5564?style=for-the-badge&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/Gemini_API-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white"/> <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"/>
+</details>
 
-- Building a RAG document Q&A system (FastAPI, LangChain, ChromaDB, Gemini)
-- Learning: advanced RAG evaluation, LLMOps, system design
+<details open>
+<summary><b>Backend</b></summary>
+<br>
+<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/> <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white"/> <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white"/> <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white"/> <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/> <img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white"/> <img src="https://img.shields.io/badge/DynamoDB-4053D6?style=for-the-badge&logo=amazondynamodb&logoColor=white"/>
+</details>
 
-## Start here
+<details open>
+<summary><b>Cloud</b></summary>
+<br>
+<img src="https://img.shields.io/badge/AWS%20%28Lambda-0EA5E9?style=for-the-badge"/> <img src="https://img.shields.io/badge/S3-0EA5E9?style=for-the-badge"/> <img src="https://img.shields.io/badge/API%20Gateway%29-0EA5E9?style=for-the-badge"/> <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/> <img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black"/> <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"/>
+</details>
 
-| Resource | What you'll find |
-| --- | --- |
-| [RAG Document Q&A](https://github.com/Devendra2306/rag-document-qa) | Upload a document, ask in plain language, get answers grounded in the text with cited sources. |
-| [CloudVault](https://github.com/Devendra2306/cloudvault) | Drive-style cloud storage with auth, relational data modelling and S3-backed files. |
-| [AQI Monitoring Platform](https://github.com/Devendra2306/aqi-monitoring) | Real-time and historical air-quality analytics with a live map, trends and data-freshness checks. |
+<details open>
+<summary><b>Frontend</b></summary>
+<br>
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black"/> <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white"/> <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white"/>
+</details>
 
-## Connect
+<details open>
+<summary><b>Languages</b></summary>
+<br>
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/> <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/> <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"/>
+</details>
 
-- [LinkedIn](https://www.linkedin.com/in/devendra-divakar-9649a32a4/)
-- [Email](mailto:devdiwakar27@gmail.com)
+
+### 🚀 Featured Projects
+
+<div align="center">
+  <a href="https://github.com/Devendra2306/rag-document-qa">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Devendra2306&repo=rag-document-qa&theme=tokyonight&bg_color=020617&title_color=38BDF8&icon_color=0EA5E9&text_color=F8FAFC&border_color=0EA5E9" />
+  </a>
+  <a href="https://github.com/Devendra2306/cloudvault">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Devendra2306&repo=cloudvault&theme=tokyonight&bg_color=020617&title_color=38BDF8&icon_color=0EA5E9&text_color=F8FAFC&border_color=0EA5E9" />
+  </a>
+  <a href="https://github.com/Devendra2306/aqi-monitoring">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Devendra2306&repo=aqi-monitoring&theme=tokyonight&bg_color=020617&title_color=38BDF8&icon_color=0EA5E9&text_color=F8FAFC&border_color=0EA5E9" />
+  </a>
+</div>
+
+
+### 📊 GitHub Analytics
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Devendra2306&show_icons=true&theme=tokyonight&bg_color=020617&title_color=38BDF8&icon_color=0EA5E9&text_color=F8FAFC&border_color=0EA5E9&hide_border=false" height="195"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Devendra2306&layout=compact&theme=tokyonight&bg_color=020617&title_color=38BDF8&text_color=F8FAFC&border_color=0EA5E9&hide_border=false" height="195"/>
+  <br><br>
+  <img src="https://streak-stats.demolab.com?user=Devendra2306&theme=tokyonight&background=020617&stroke=0EA5E9&ring=38BDF8&fire=F59E0B&currStreakLabel=F8FAFC&border=0EA5E9" height="195"/>
+</div>
+
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=0:020617,50:0EA5E9,100:020617&section=footer"/>
+</div>

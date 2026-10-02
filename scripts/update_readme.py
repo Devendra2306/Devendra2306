@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Rebuild README.md from profile.yml + live GitHub data."""
+"""Rebuild README.md from profile.yml + live GitHub data for a FLASHY, modern layout!"""
 import datetime as dt
 import json
 import os
 import urllib.request
 from pathlib import Path
-
+import urllib.parse
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -33,10 +33,6 @@ def build_projects(cfg, repos_by_name):
             "full_name": repo_full,
             "title": override.get("title") or name,
             "url": api.get("html_url") or f"https://github.com/{repo_full}",
-            "summary": override.get("summary") or api.get("description") or "",
-            "language": api.get("language") or (override.get("stack")[0] if override.get("stack") else "Code"),
-            "stars": api.get("stargazers_count", 0),
-            "forks": api.get("forks_count", 0),
         }
 
     for p in cfg.get("projects", []):
@@ -50,72 +46,122 @@ def main():
     cfg = yaml.safe_load((ROOT / "profile.yml").read_text(encoding="utf-8"))
     user, links = cfg["github"], cfg["links"]
 
-    user_api = gh(f"/users/{user}") or {}
-    followers = user_api.get("followers", 0)
-
     repos = gh(f"/users/{user}/repos?per_page=100&sort=pushed&type=owner") or []
     repos_by_name = {r["name"].lower(): r for r in repos}
-
     projects = build_projects(cfg, repos_by_name)
 
+    name_encoded = urllib.parse.quote(cfg['name'])
+    headline_encoded = urllib.parse.quote(cfg['headline'])
+
     L = []
-    L += [f"# Hi, I'm {cfg['name'].split()[0]} 👋", ""]
-    L += [cfg["tagline"].strip(), ""]
     
+    # 1. Flashy Header Banner
     L += [
-        f'<a href="https://github.com/{user}?tab=followers"><img height="24" src="https://img.shields.io/badge/followers-{followers}-24292f?style=flat-square&logo=github" alt="GitHub followers"/></a>',
-        f'<img height="24" src="https://komarev.com/ghpvc/?username={user}&style=flat-square&label=views&color=555555" alt="profile views"/>',
-        ""
+        '<div align="center">',
+        f'  <img src="https://capsule-render.vercel.app/api?type=waving&height=250&color=0:020617,50:0EA5E9,100:020617&text={name_encoded}&fontSize=50&fontAlignY=35&animation=fadeIn&fontColor=F8FAFC&desc={headline_encoded}&descAlignY=55&descSize=20"/>',
+        '',
+        '  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=800&lines=Building+Production-Grade+AI+Systems;FastAPI+%E2%80%A2+LangChain+%E2%80%A2+AWS+%E2%80%A2+React;Bridging+the+gap+between+AI+Demos+%26+Production"/>',
+        '  <br><br>',
+        f'  <img src="https://komarev.com/ghpvc/?username={user}&style=for-the-badge&label=Profile+Views&color=0ea5e9"/>',
+        '</div>',
+        '<br>',
+        ''
     ]
 
-    L += ["## 📌 Featured projects", "", "<table>"]
+    # 2. About Me Section
+    L += ['### 👨‍💻 About Me', '']
+    L += [f"> {cfg['tagline'].strip()}", ""]
     
-    # Pair projects for 2-column table
-    for i in range(0, len(projects), 2):
-        L.append("  <tr>")
-        for j in range(2):
-            if i + j < len(projects):
-                c = projects[i+j]
-                # Pick a color based on language if possible, else gray
-                lang_color = "3178C6" if c['language'] == 'TypeScript' else "3776AB" if c['language'] == 'Python' else "E34F26" if c['language'] == 'HTML' else "F7DF1E" if c['language'] == 'JavaScript' else "lightgrey"
-                
-                L.append('    <td width="50%" valign="top">')
-                L.append(f'      <b><a href="{c["url"]}">{c["title"]}</a></b>')
-                L.append(f'      <a href="{c["url"]}"><img height="18" src="https://img.shields.io/badge/-Public-lightgrey?style=flat-square" alt="Public"/></a><br/>')
-                L.append(f'      <sub>{c["summary"]}</sub><br/>')
-                if c["language"]:
-                    L.append(f'      <img height="18" src="https://img.shields.io/badge/-{c["language"]}-{lang_color}?style=flat-square" alt="{c["language"]}"/>')
-                L.append(f'      <a href="{c["url"]}/stargazers"><img height="18" src="https://img.shields.io/github/stars/{c["full_name"]}?style=social" alt="stars"/></a>')
-                L.append(f'      <a href="{c["url"]}/forks"><img height="18" src="https://img.shields.io/github/forks/{c["full_name"]}?style=social" alt="forks"/></a>')
-                L.append('    </td>')
-            else:
-                L.append('    <td width="50%" valign="top"></td>')
-        L.append("  </tr>")
-    
-    L += ["</table>", ""]
-    
-    L += ["## What I'm building", ""]
-    L += [
-        "I build the layer between AI demos and production-ready systems.",
-        "My current focus includes:",
-        ""
-    ]
     for item in cfg.get("currently", []):
-        L.append(f"- {item}")
-    
-    L += ["", "## Start here", "", "| Resource | What you'll find |", "| --- | --- |"]
-    for c in projects:
-        L.append(f"| [{c['title']}]({c['url']}) | {c['summary']} |")
-        
-    L += ["", "## Connect", ""]
-    for key, label in (("linkedin", "LinkedIn"), ("portfolio", "Portfolio"), ("resume", "Resume")):
-        if links.get(key):
-            L.append(f"- [{label}]({links[key]})")
+        L.append(f"- 🔭 I'm currently working on **{item}**")
+    L.append(f"- 💼 Open to **{cfg['open_to']}**")
     if links.get("email"):
-        L.append(f"- [Email](mailto:{links['email']})")
+        L.append(f"- 📫 How to reach me: **{links['email']}**")
+    if links.get("linkedin"):
+        L.append(f"- 🔗 Let's connect on [LinkedIn]({links['linkedin']})")
+    L.append("")
 
-    L += [""]
+    # 3. Flashy Skills Section
+    L += ['### 🛠️ Tech Stack & Skills', '']
     
+    stack = cfg.get("stack", {})
+    
+    # Pre-defined shields.io logo mapping for a modern look
+    # Format: "Name": ("BadgeLabel", "Color", "LogoName")
+    badge_map = {
+        "python": ("Python", "3776AB", "python"),
+        "javascript": ("JavaScript", "F7DF1E", "javascript"),
+        "java": ("Java", "ED8B00", "openjdk"),
+        "c++": ("C++", "00599C", "c%2B%2B"),
+        "langchain": ("LangChain", "1C3C3C", "langchain"),
+        "rag": ("RAG", "06B6D4", ""),
+        "chromadb": ("ChromaDB", "4C5564", "python"),
+        "gemini api": ("Gemini_API", "8E75B2", "googlegemini"),
+        "pytorch": ("PyTorch", "EE4C2C", "pytorch"),
+        "fastapi": ("FastAPI", "009688", "fastapi"),
+        "node.js": ("Node.js", "339933", "node.js"),
+        "express": ("Express", "000000", "express"),
+        "django": ("Django", "092E20", "django"),
+        "postgresql": ("PostgreSQL", "4169E1", "postgresql"),
+        "prisma": ("Prisma", "2D3748", "prisma"),
+        "dynamodb": ("DynamoDB", "4053D6", "amazondynamodb"),
+        "aws (lambda, s3, api gateway)": ("AWS", "232F3E", "amazonwebservices"),
+        "docker": ("Docker", "2496ED", "docker"),
+        "render": ("Render", "46E3B7", "render"),
+        "vercel": ("Vercel", "000000", "vercel"),
+        "react": ("React", "61DAFB", "react"),
+        "vite": ("Vite", "646CFF", "vite"),
+        "tailwindcss": ("TailwindCSS", "06B6D4", "tailwindcss")
+    }
+
+    for category, items in stack.items():
+        L.append(f'<details open>')
+        L.append(f'<summary><b>{category}</b></summary>')
+        L.append('<br>')
+        badges = []
+        for item in items:
+            key = item.lower()
+            if key in badge_map:
+                label, color, logo = badge_map[key]
+                logo_str = f"&logo={logo}&logoColor=white" if logo else ""
+                # Adjust text color if background is bright
+                if color.upper() in ["F7DF1E", "61DAFB", "46E3B7"]:
+                    logo_str = logo_str.replace("logoColor=white", "logoColor=black")
+                    badges.append(f'<img src="https://img.shields.io/badge/{label}-{color}?style=for-the-badge{logo_str}"/>')
+                else:
+                    badges.append(f'<img src="https://img.shields.io/badge/{label}-{color}?style=for-the-badge{logo_str}"/>')
+            else:
+                encoded_item = urllib.parse.quote(item.replace("-", "--"))
+                badges.append(f'<img src="https://img.shields.io/badge/{encoded_item}-0EA5E9?style=for-the-badge"/>')
+        L.append(" ".join(badges))
+        L.append('</details>')
+        L.append('')
+
+    L.append("")
+
+    # 4. Featured Projects (Flashy Cards)
+    L += ['### 🚀 Featured Projects', '', '<div align="center">']
+    for p in projects:
+        L.append(f'  <a href="{p["url"]}">')
+        L.append(f'    <img src="https://github-readme-stats.vercel.app/api/pin/?username={user}&repo={p["name"]}&theme=tokyonight&bg_color=020617&title_color=38BDF8&icon_color=0EA5E9&text_color=F8FAFC&border_color=0EA5E9" />')
+        L.append('  </a>')
+    L += ['</div>', '', '']
+
+    # 5. GitHub Analytics
+    L += ['### 📊 GitHub Analytics', '', '<div align="center">']
+    L.append(f'  <img src="https://github-readme-stats.vercel.app/api?username={user}&show_icons=true&theme=tokyonight&bg_color=020617&title_color=38BDF8&icon_color=0EA5E9&text_color=F8FAFC&border_color=0EA5E9&hide_border=false" height="195"/>')
+    L.append(f'  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username={user}&layout=compact&theme=tokyonight&bg_color=020617&title_color=38BDF8&text_color=F8FAFC&border_color=0EA5E9&hide_border=false" height="195"/>')
+    L.append('  <br><br>')
+    L.append(f'  <img src="https://streak-stats.demolab.com?user={user}&theme=tokyonight&background=020617&stroke=0EA5E9&ring=38BDF8&fire=F59E0B&currStreakLabel=F8FAFC&border=0EA5E9" height="195"/>')
+    L += ['</div>', '', '']
+
+    # Footer
+    L += [
+        '<div align="center">',
+        '  <img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=0:020617,50:0EA5E9,100:020617&section=footer"/>',
+        '</div>'
+    ]
+
     (ROOT / "README.md").write_text("\n".join(L), encoding="utf-8")
     print(f"README.md written ({len(projects)} projects)")
 
