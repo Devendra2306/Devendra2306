@@ -1,72 +1,61 @@
-# Hi, I'm Devendra
-
-**AI/ML & Backend Engineer**
+# Hi, I'm Devendra 👋
 
 I build the layer between "AI demo" and "thing that runs in production" — retrieval pipelines that return the right chunk, APIs that hold up under load, and systems shipped end to end.
 
-- **Open to:** AI/ML + Backend internships (2026–27)
-- **Now:** Building a RAG document Q&A system (FastAPI, LangChain, ChromaDB, Gemini)
-- **Now:** Learning: advanced RAG evaluation, LLMOps, system design
+<a href="https://github.com/Devendra2306?tab=followers"><img height="24" src="https://img.shields.io/badge/followers-5-24292f?style=flat-square&logo=github" alt="GitHub followers"/></a>
+<img height="24" src="https://komarev.com/ghpvc/?username=Devendra2306&style=flat-square&label=views&color=555555" alt="profile views"/>
 
-[Email](mailto:devdiwakar27@gmail.com) · [LinkedIn](https://www.linkedin.com/in/devendra-divakar-9649a32a4/)
+## 📌 Featured projects
 
----
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <b><a href="https://github.com/Devendra2306/rag-document-qa">RAG Document Q&A</a></b>
+      <a href="https://github.com/Devendra2306/rag-document-qa"><img height="18" src="https://img.shields.io/badge/-Public-lightgrey?style=flat-square" alt="Public"/></a><br/>
+      <sub>Upload a document, ask in plain language, get answers grounded in the text with cited sources.</sub><br/>
+      <img height="18" src="https://img.shields.io/badge/-React-lightgrey?style=flat-square" alt="React"/>
+      <a href="https://github.com/Devendra2306/rag-document-qa/stargazers"><img height="18" src="https://img.shields.io/github/stars/Devendra2306/rag-document-qa?style=social" alt="stars"/></a>
+      <a href="https://github.com/Devendra2306/rag-document-qa/forks"><img height="18" src="https://img.shields.io/github/forks/Devendra2306/rag-document-qa?style=social" alt="forks"/></a>
+    </td>
+    <td width="50%" valign="top">
+      <b><a href="https://github.com/Devendra2306/cloudvault">CloudVault</a></b>
+      <a href="https://github.com/Devendra2306/cloudvault"><img height="18" src="https://img.shields.io/badge/-Public-lightgrey?style=flat-square" alt="Public"/></a><br/>
+      <sub>Drive-style cloud storage with auth, relational data modelling and S3-backed files.</sub><br/>
+      <img height="18" src="https://img.shields.io/badge/-React-lightgrey?style=flat-square" alt="React"/>
+      <a href="https://github.com/Devendra2306/cloudvault/stargazers"><img height="18" src="https://img.shields.io/github/stars/Devendra2306/cloudvault?style=social" alt="stars"/></a>
+      <a href="https://github.com/Devendra2306/cloudvault/forks"><img height="18" src="https://img.shields.io/github/forks/Devendra2306/cloudvault?style=social" alt="forks"/></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <b><a href="https://github.com/Devendra2306/aqi-monitoring">AQI Monitoring Platform</a></b>
+      <a href="https://github.com/Devendra2306/aqi-monitoring"><img height="18" src="https://img.shields.io/badge/-Public-lightgrey?style=flat-square" alt="Public"/></a><br/>
+      <sub>Real-time and historical air-quality analytics with a live map, trends and data-freshness checks.</sub><br/>
+      <img height="18" src="https://img.shields.io/badge/-Python-3776AB?style=flat-square" alt="Python"/>
+      <a href="https://github.com/Devendra2306/aqi-monitoring/stargazers"><img height="18" src="https://img.shields.io/github/stars/Devendra2306/aqi-monitoring?style=social" alt="stars"/></a>
+      <a href="https://github.com/Devendra2306/aqi-monitoring/forks"><img height="18" src="https://img.shields.io/github/forks/Devendra2306/aqi-monitoring?style=social" alt="forks"/></a>
+    </td>
+    <td width="50%" valign="top"></td>
+  </tr>
+</table>
 
-## Featured projects
+## What I'm building
 
-### [RAG Document Q&A](https://github.com/Devendra2306/rag-document-qa)
+I build the layer between AI demos and production-ready systems.
+My current focus includes:
 
-Upload a document, ask in plain language, get answers grounded in the text with cited sources.
+- Building a RAG document Q&A system (FastAPI, LangChain, ChromaDB, Gemini)
+- Learning: advanced RAG evaluation, LLMOps, system design
 
-**Stack:** `React` `FastAPI` `LangChain` `ChromaDB` `Gemini API`
+## Start here
 
-- Chunk -> embed -> retrieve -> generate pipeline; answers cite the retrieved chunks
-- Tuned chunk size and retrieval-k to balance precision vs. context cost
+| Resource | What you'll find |
+| --- | --- |
+| [RAG Document Q&A](https://github.com/Devendra2306/rag-document-qa) | Upload a document, ask in plain language, get answers grounded in the text with cited sources. |
+| [CloudVault](https://github.com/Devendra2306/cloudvault) | Drive-style cloud storage with auth, relational data modelling and S3-backed files. |
+| [AQI Monitoring Platform](https://github.com/Devendra2306/aqi-monitoring) | Real-time and historical air-quality analytics with a live map, trends and data-freshness checks. |
 
-[Code](https://github.com/Devendra2306/rag-document-qa)
+## Connect
 
-### [CloudVault](https://github.com/Devendra2306/cloudvault)
-
-Drive-style cloud storage with auth, relational data modelling and S3-backed files.
-
-**Stack:** `React` `Node.js` `PostgreSQL` `Prisma` `AWS S3`
-
-- Auth + per-user file ownership on a relational schema
-
-[Code](https://github.com/Devendra2306/cloudvault)
-
-### [AQI Monitoring Platform](https://github.com/Devendra2306/aqi-monitoring)
-
-Real-time and historical air-quality analytics with a live map, trends and data-freshness checks.
-
-**Stack:** `Python` `DuckDB` `Dash` `OpenAQ API`
-
-- Runs on a memory-constrained free tier (DuckDB keeps it light)
-
-[Code](https://github.com/Devendra2306/aqi-monitoring)
-
----
-
-## Stack
-
-| | |
-|---|---|
-| **AI** | Python · LangChain · RAG · ChromaDB · Gemini API · PyTorch |
-| **Backend** | FastAPI · Node.js · Express · Django · PostgreSQL · Prisma · DynamoDB |
-| **Cloud** | AWS (Lambda · S3 · API Gateway) · Docker · Render · Vercel |
-| **Frontend** | React · Vite · TailwindCSS |
-| **Languages** | Python · JavaScript · Java · C++ |
-
----
-
-## Recent activity
-
-- `2026-10-02` [Devendra2306/cloudvault-storage](https://github.com/Devendra2306/cloudvault-storage) — pushed updates
-- `2026-09-28` [Devendra2306/personal-portfolio](https://github.com/Devendra2306/personal-portfolio) — pushed updates
-- `2026-09-27` [Devendra2306/TAXATION-X](https://github.com/Devendra2306/TAXATION-X) — pushed updates
-
----
-
-<img height="150" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=Devendra2306&show_icons=true&hide_border=true&theme=transparent" />
-
-<sub>Auto-generated from `profile.yml` + GitHub API · last updated 2026-10-02</sub>
+- [LinkedIn](https://www.linkedin.com/in/devendra-divakar-9649a32a4/)
+- [Email](mailto:devdiwakar27@gmail.com)
