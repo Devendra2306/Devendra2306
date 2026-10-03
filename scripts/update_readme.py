@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rebuild README.md with an incredibly unique Neofetch/Animated Hacker aesthetic."""
+"""Rebuild README.md with an Ultra-Premium Bento Box / Linear.app aesthetic."""
 import datetime as dt
 import json
 import os
@@ -53,94 +53,113 @@ def main():
     repos_by_name = {r["name"].lower(): r for r in repos}
     projects = build_projects(cfg, repos_by_name)
 
+    # Encode name and headline for URLs
+    name_encoded = urllib.parse.quote(cfg['name'].upper())
+    headline_encoded = urllib.parse.quote(cfg['headline'])
+
     L = []
     
-    # 1. Animated Tech Banner
+    # 1. Premium Gradient Banner
     L += [
         '<div align="center">',
-        '  <img src="https://capsule-render.vercel.app/api?type=waving&amp;height=250&amp;color=0:0D1117,50:00FF87,100:0D1117&amp;text=DEVENDRA%20DIWAKAR&amp;fontSize=50&amp;fontAlignY=35&amp;animation=fadeIn&amp;fontColor=00FF87&amp;desc=AI%20%2F%20ML%20%26%20Backend%20Engineer&amp;descAlignY=55&amp;descSize=20"/>',
+        f'  <img src="https://capsule-render.vercel.app/api?type=waving&amp;height=280&amp;color=gradient&amp;customColorList=8A2387,E94057,F27121&amp;text={name_encoded}&amp;fontSize=55&amp;fontAlignY=35&amp;animation=fadeIn&amp;fontColor=ffffff&amp;desc={headline_encoded}&amp;descAlignY=55&amp;descSize=22"/>',
         '</div>',
         '<br>'
     ]
 
-    # 2. Animated Neofetch (Terminal Identity)
-    L += [
-        '### 💻 Terminal Identity',
-        '',
-        '```bash',
-        f'{user}@ai-infrastructure:~$ neofetch',
-        '',
-        '        ..:::::::::..             -------------------',
-        '    ..:::aad8888888baa:::..       OS:      AI/ML Infrastructure Engine',
-        '  .::::d:?88888888888?::8b::::.   Host:    Devendra Diwakar',
-        ' .:::d8888:?88888888??a888888b::. Kernel:  Backend Engineering (Python, Node)',
-        ' :::d8888888a8888888aa8888888b::: Uptime:  24/7/365',
-        ' ::::?8888888888888888888888?:::: Shell:   FastAPI, LangChain, React',
-        '  ::::?88888888888888888888?::::  Contact: devdiwakar27@gmail.com',
-        '    ::::?8888888888888888?::::    Status:  Available for 2026-27 Internships',
-        '        ..:::::::::::..           ',
-        '```',
-        ''
-    ]
-
-    # 3. Animated Typing Status
+    # 2. Sleek Typing Subheader & Social Links
     L += [
         '<div align="center">',
-        '  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;weight=600&amp;size=18&amp;duration=3000&amp;pause=1000&amp;color=00FF87&amp;center=true&amp;vCenter=true&amp;width=800&amp;lines=>_Initializing+neural+pathways...;>_Deploying+RAG+Document+Q%26A+System...;>_Compiling+cloud+infrastructure...;>_System+Online.+Welcome." />',
+        '  <img src="https://readme-typing-svg.demolab.com?font=Inter&amp;weight=500&amp;size=20&amp;duration=4000&amp;pause=1000&amp;color=E94057&amp;center=true&amp;vCenter=true&amp;width=800&amp;lines=Bridging+the+gap+between+AI+demos+and+production.;Architecting+scalable+backend+infrastructure.;Available+for+2026-27+Internships." />',
+        '  <br><br>',
+        f'  <a href="{links.get("linkedin", "#")}"><img src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" /></a>',
+        f'  <a href="mailto:{links.get("email", "#")}"><img src="https://img.shields.io/badge/Email-000000?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" /></a>',
+        f'  <a href="https://github.com/{user}"><img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a>',
         '</div>',
+        '<br><br>',
+        '---',
         '<br>'
     ]
 
-    # 4. Animated GitHub Trophies (Unique Visual)
+    # 3. The Bento Box - Projects Grid
     L += [
-        '### 🏆 Achievements',
-        '',
-        '<div align="center">',
-        f'  <a href="https://github.com/{user}"><img src="https://github-profile-trophy.vercel.app/?username={user}&amp;theme=dracula&amp;column=7&amp;row=1&amp;margin-w=15&amp;margin-h=15&amp;no-bg=false&amp;no-frame=false" alt="Trophies" /></a>',
-        '</div>',
+        '<h2 align="center">✦ Engineered Solutions ✦</h2>',
+        '<br>',
+        '<table align="center" width="100%" style="border-collapse: collapse;">'
+    ]
+    
+    # Split projects into pairs for the grid
+    for i in range(0, len(projects), 2):
+        p1 = projects[i]
+        p2 = projects[i+1] if i+1 < len(projects) else None
+        
+        L.append('  <tr>')
+        # Project 1
+        L.append('    <td width="50%" align="center" valign="top" style="padding: 20px; border: 1px solid #30363D; border-radius: 12px;">')
+        L.append(f'      <h3><a href="{p1["url"]}" style="color: #E94057; text-decoration: none;">{p1["title"]}</a></h3>')
+        L.append(f'      <p><i>{p1["summary"]}</i></p>')
+        if p1.get("metrics"):
+            L.append(f'      <p><b>{p1["metrics"]}</b></p>')
+        if p1["stack"]:
+            stack_str = " • ".join([f"<code>{s}</code>" for s in p1["stack"]])
+            L.append(f'      <p>{stack_str}</p>')
+        L.append('    </td>')
+        
+        # Project 2 (or empty cell if odd number)
+        if p2:
+            L.append('    <td width="50%" align="center" valign="top" style="padding: 20px; border: 1px solid #30363D; border-radius: 12px;">')
+            L.append(f'      <h3><a href="{p2["url"]}" style="color: #E94057; text-decoration: none;">{p2["title"]}</a></h3>')
+            L.append(f'      <p><i>{p2["summary"]}</i></p>')
+            if p2.get("metrics"):
+                L.append(f'      <p><b>{p2["metrics"]}</b></p>')
+            if p2["stack"]:
+                stack_str = " • ".join([f"<code>{s}</code>" for s in p2["stack"]])
+                L.append(f'      <p>{stack_str}</p>')
+            L.append('    </td>')
+        else:
+            L.append('    <td width="50%" style="border: none;"></td>')
+            
+        L.append('  </tr>')
+        
+    L += ['</table>', '<br><br>', '---', '<br>']
+
+    # 4. Tech Stack & Arsenal
+    L += [
+        '<h2 align="center">✦ Tech Arsenal ✦</h2>',
+        '<br>',
+        '<p align="center">',
+        '  <img src="https://skillicons.dev/icons?i=python,js,java,cpp,react,tailwind,vite&amp;perline=7&amp;theme=dark" /><br><br>',
+        '  <img src="https://skillicons.dev/icons?i=fastapi,nodejs,express,django,postgres,prisma,dynamodb&amp;perline=7&amp;theme=dark" /><br><br>',
+        '  <img src="https://skillicons.dev/icons?i=aws,docker,vercel,git,github,postman&amp;perline=6&amp;theme=dark" />',
+        '</p>',
+        '<br><br>',
+        '---',
         '<br>'
     ]
 
-    # 5. Core Systems (Projects with glowing badging)
-    L += ['### 🚀 Core Subsystems (Deployed Projects)', '']
-    for p in projects:
-        stack_str = " ".join([f"`{s}`" for s in p["stack"]]) if p["stack"] else ""
-        L.append(f'#### 🔴 🟡 🟢 `{p["title"]}`')
-        L.append(f'> **Mission:** {p["summary"]}')
-        if stack_str:
-            L.append(f'> **Stack:** {stack_str}')
-        if p.get("metrics"):
-            L.append(f'> **Telemetry:** *{p["metrics"]}*')
-        L.append(f'> **Link:** [github.com/{p["full_name"]}](https://github.com/{p["full_name"]})')
-        L.append('')
-
-    # 6. Tools and Analytics Side-by-Side (Using HTML Tables for crazy layout)
+    # 5. Telemetry & Stats (Bento Box 2)
     L += [
-        '### ⚙️ System Analytics & Tech Stack',
-        '',
-        '<table align="center" width="100%">',
-        '<tr>',
-        '  <td width="50%" align="center">',
-        '    <b>Active Tech Stack</b><br><br>',
-        '    <img src="https://skillicons.dev/icons?i=py,js,java,cpp,react,tailwind,vite&amp;perline=7" /><br>',
-        '    <img src="https://skillicons.dev/icons?i=fastapi,nodejs,express,django,postgres,prisma,dynamodb&amp;perline=7" /><br>',
-        '    <img src="https://skillicons.dev/icons?i=aws,docker,vercel,git,github,postman&amp;perline=6" />',
-        '  </td>',
-        '  <td width="50%" align="center">',
-        '    <b>Activity Radar</b><br><br>',
-        f'    <img src="https://github-readme-stats.vercel.app/api?username={user}&amp;show_icons=true&amp;theme=dracula&amp;bg_color=0D1117&amp;title_color=00FF87&amp;icon_color=00FF87&amp;text_color=ffffff&amp;border_color=00FF87&amp;hide_border=true" height="155"/>',
-        '  </td>',
-        '</tr>',
+        '<h2 align="center">✦ Live Telemetry ✦</h2>',
+        '<br>',
+        '<table align="center" width="100%" style="border-collapse: collapse;">',
+        '  <tr>',
+        '    <td width="50%" align="center" style="padding: 10px;">',
+        f'      <img src="https://github-readme-stats.vercel.app/api?username={user}&amp;show_icons=true&amp;theme=transparent&amp;bg_color=00000000&amp;title_color=E94057&amp;icon_color=F27121&amp;text_color=A0A0A0&amp;hide_border=true" />',
+        '    </td>',
+        '    <td width="50%" align="center" style="padding: 10px;">',
+        f'      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username={user}&amp;layout=compact&amp;theme=transparent&amp;bg_color=00000000&amp;title_color=E94057&amp;text_color=A0A0A0&amp;hide_border=true" />',
+        '    </td>',
+        '  </tr>',
         '</table>',
+        '<br><br>',
+        '---',
         '<br>'
     ]
 
-    # 7. Animated Snake (Requires GitHub Action running)
+    # 6. Animated Snake
     L += [
-        '### 🐍 Contribution Activity',
-        '',
-        '> *Note: The animated snake is generated daily via GitHub Actions.*',
-        '',
+        '<h2 align="center">✦ Contribution Heatmap ✦</h2>',
+        '<br>',
         '<div align="center">',
         f'  <picture>',
         f'    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/{user}/{user}/output/github-snake-dark.svg">',
@@ -154,7 +173,7 @@ def main():
     # Footer
     L += [
         '<div align="center">',
-        '  <img src="https://capsule-render.vercel.app/api?type=waving&amp;height=100&amp;color=0:0D1117,50:00FF87,100:0D1117&amp;section=footer"/>',
+        '  <img src="https://capsule-render.vercel.app/api?type=waving&amp;height=120&amp;color=gradient&amp;customColorList=8A2387,E94057,F27121&amp;section=footer"/>',
         '</div>'
     ]
 
