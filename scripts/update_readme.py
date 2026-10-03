@@ -35,6 +35,7 @@ def build_projects(cfg, repos_by_name):
             "url": api.get("html_url") or f"https://github.com/{repo_full}",
             "summary": override.get("summary") or api.get("description") or "",
             "stack": override.get("stack") or [],
+            "metrics": override.get("metrics") or "",
         }
 
     for p in cfg.get("projects", []):
@@ -108,6 +109,8 @@ def main():
         L.append(f'> **Mission:** {p["summary"]}')
         if stack_str:
             L.append(f'> **Stack:** {stack_str}')
+        if p.get("metrics"):
+            L.append(f'> **Telemetry:** *{p["metrics"]}*')
         L.append(f'> **Link:** [github.com/{p["full_name"]}](https://github.com/{p["full_name"]})')
         L.append('')
 
