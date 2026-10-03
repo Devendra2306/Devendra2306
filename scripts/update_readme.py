@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Rebuild README.md with a highly UNIQUE, Cyberpunk/System Terminal aesthetic."""
+"""Rebuild README.md with an incredibly unique Neofetch/Animated Hacker aesthetic."""
 import datetime as dt
 import json
 import os
 import urllib.request
 from pathlib import Path
+import urllib.parse
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -53,82 +54,96 @@ def main():
 
     L = []
     
-    # 1. Boot Sequence Header
+    # 1. Animated Tech Banner
     L += [
         '<div align="center">',
-        '<code>',
-        '██████╗ ███████╗██╗   ██╗███████╗███╗   ██╗██████╗ ██████╗  █████╗ ',
-        '██╔══██╗██╔════╝██║   ██║██╔════╝████╗  ██║██╔══██╗██╔══██╗██╔══██╗',
-        '██║  ██║█████╗  ██║   ██║█████╗  ██╔██╗ ██║██║  ██║██████╔╝███████║',
-        '██║  ██║██╔══╝  ╚██╗ ██╔╝██╔══╝  ██║╚██╗██║██║  ██║██╔══██╗██╔══██║',
-        '██████╔╝███████╗ ╚████╔╝ ███████╗██║ ╚████║██████╔╝██║  ██║██║  ██║',
-        '╚═════╝ ╚══════╝  ╚═══╝  ╚══════╝╚═╝  ╚═══╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝',
-        '</code>',
+        '  <img src="https://capsule-render.vercel.app/api?type=waving&height=250&color=0:0D1117,50:00FF87,100:0D1117&text=DEVENDRA%20DIWAKAR&fontSize=50&fontAlignY=35&animation=fadeIn&fontColor=00FF87&desc=AI%20%2F%20ML%20%26%20Backend%20Engineer&descAlignY=55&descSize=20"/>',
         '</div>',
-        '<br>',
-        '<div align="center">',
-        f'  <b><a href="https://github.com/{user}">GITHUB_DATA_LINK</a></b> // <b><a href="mailto:{links.get("email", "")}">SECURE_COMM_CHANNEL</a></b> // <b><a href="{links.get("linkedin", "")}">NETWORK_NODE</a></b>',
-        '</div>',
-        '<br><hr>',
+        '<br>'
     ]
 
-    # 2. Terminal Output: About
+    # 2. Animated Neofetch (Terminal Identity)
     L += [
-        '### <code>[SYS_ADMIN] ./initialize_profile.sh</code>',
+        '### 💻 Terminal Identity',
         '',
-        '```json',
-        '{',
-        f'  "operator": "{cfg["name"]}",',
-        f'  "classification": "{cfg["headline"]}",',
-        f'  "objective": "{cfg["tagline"].strip()}",',
-        f'  "availability": "{cfg["open_to"]}"',
-        '}',
+        '```bash',
+        f'{user}@ai-infrastructure:~$ neofetch',
+        '',
+        '        ..:::::::::..             -------------------',
+        '    ..:::aad8888888baa:::..       OS:      AI/ML Infrastructure Engine',
+        '  .::::d:?88888888888?::8b::::.   Host:    Devendra Diwakar',
+        ' .:::d8888:?88888888??a888888b::. Kernel:  Backend Engineering (Python, Node)',
+        ' :::d8888888a8888888aa8888888b::: Uptime:  24/7/365',
+        ' ::::?8888888888888888888888?:::: Shell:   FastAPI, LangChain, React',
+        '  ::::?88888888888888888888?::::  Contact: devdiwakar27@gmail.com',
+        '    ::::?8888888888888888?::::    Status:  Available for 2026-27 Internships',
+        '        ..:::::::::::..           ',
         '```',
         ''
     ]
 
-    # 3. Stack YAML Dump
+    # 3. Animated Typing Status
     L += [
-        '### <code>[SYS_ADMIN] cat /etc/infrastructure_stack.yaml</code>',
-        '',
-        '```yaml'
+        '<div align="center">',
+        '  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=3000&pause=1000&color=00FF87&center=true&vCenter=true&width=800&lines=>_Initializing+neural+pathways...;>_Deploying+RAG+Document+Q%26A+System...;>_Compiling+cloud+infrastructure...;>_System+Online.+Welcome." />',
+        '</div>',
+        '<br>'
     ]
-    for category, items in cfg.get("stack", {}).items():
-        items_str = ", ".join([f'"{item}"' for item in items])
-        L.append(f'{category.lower().replace(" ", "_")}: [{items_str}]')
-    L += ['```', '']
 
-    # 4. Active Subsystems (Projects)
+    # 4. Animated GitHub Trophies (Unique Visual)
     L += [
-        '### <code>[SYS_ADMIN] docker ps --format "table {{.Status}}\t{{.Names}}\t{{.Ports}}"</code>',
-        '',
-        '| STATUS | MODULE_NAME | SPECIFICATION_OVERVIEW |',
-        '|:---:|:---|:---|'
-    ]
-    for p in projects:
-        stack_str = ", ".join(p["stack"]) if p["stack"] else "Unknown"
-        L.append(f'| 🟢 `UP` | **[{p["title"].upper()}]({p["url"]})** | {p["summary"]} <br> <sub>`STACK: {stack_str}`</sub> |')
-    L += ['', '']
-
-    # 5. Background Tasks
-    L += [
-        '### <code>[SYS_ADMIN] htop --filter "current_tasks"</code>',
-        '',
-        '```bash',
-        '  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND'
-    ]
-    for i, item in enumerate(cfg.get("currently", []), 1):
-        pid = 1000 + i * 23
-        L.append(f'{pid} {user.lower()[:8]}  20   0   9.8g   4.2g   2.1g R  99.9   1.2   0:00.00 {item}')
-    L += ['```', '']
-
-    # 6. Matrix Hacker Analytics
-    L += [
-        '### <code>[SYS_ADMIN] ./render_telemetry.py</code>',
+        '### 🏆 Achievements',
         '',
         '<div align="center">',
-        f'  <img src="https://github-readme-stats.vercel.app/api?username={user}&show_icons=true&theme=matrix&bg_color=000000&title_color=00FF00&icon_color=00FF00&text_color=00FF00&border_color=00FF00&hide_border=true" height="170"/>',
-        f'  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username={user}&layout=compact&theme=matrix&bg_color=000000&title_color=00FF00&text_color=00FF00&border_color=00FF00&hide_border=true" height="170"/>',
+        f'  <a href="https://github.com/{user}"><img src="https://github-profile-trophy.vercel.app/?username={user}&theme=dracula&column=7&row=1&margin-w=15&margin-h=15&no-bg=false&no-frame=false" alt="Trophies" /></a>',
+        '</div>',
+        '<br>'
+    ]
+
+    # 5. Core Systems (Projects with glowing badging)
+    L += ['### 🚀 Core Subsystems (Deployed Projects)', '']
+    for p in projects:
+        stack_str = " ".join([f"`{s}`" for s in p["stack"]]) if p["stack"] else ""
+        L.append(f'#### 🔴 🟡 🟢 `{p["title"]}`')
+        L.append(f'> **Mission:** {p["summary"]}')
+        if stack_str:
+            L.append(f'> **Stack:** {stack_str}')
+        L.append(f'> **Link:** [github.com/{p["full_name"]}](https://github.com/{p["full_name"]})')
+        L.append('')
+
+    # 6. Tools and Analytics Side-by-Side (Using HTML Tables for crazy layout)
+    L += [
+        '### ⚙️ System Analytics & Tech Stack',
+        '',
+        '<table align="center" width="100%">',
+        '<tr>',
+        '  <td width="50%" align="center">',
+        '    <b>Active Tech Stack</b><br><br>',
+        '    <img src="https://skillicons.dev/icons?i=py,js,java,cpp,react,tailwind,vite&perline=7" /><br>',
+        '    <img src="https://skillicons.dev/icons?i=fastapi,nodejs,express,django,postgres,prisma,dynamodb&perline=7" /><br>',
+        '    <img src="https://skillicons.dev/icons?i=aws,docker,vercel,git,github,postman&perline=6" />',
+        '  </td>',
+        '  <td width="50%" align="center">',
+        '    <b>Activity Radar</b><br><br>',
+        f'    <img src="https://github-readme-stats.vercel.app/api?username={user}&show_icons=true&theme=dracula&bg_color=0D1117&title_color=00FF87&icon_color=00FF87&text_color=ffffff&border_color=00FF87&hide_border=true" height="155"/>',
+        '  </td>',
+        '</tr>',
+        '</table>',
+        '<br>'
+    ]
+
+    # 7. Animated Snake (Requires GitHub Action running)
+    L += [
+        '### 🐍 Contribution Activity',
+        '',
+        '> *Note: The animated snake is generated daily via GitHub Actions.*',
+        '',
+        '<div align="center">',
+        f'  <picture>',
+        f'    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/{user}/{user}/output/dist/github-snake-dark.svg">',
+        f'    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/{user}/{user}/output/dist/github-snake.svg">',
+        f'    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/{user}/{user}/output/dist/github-snake.svg">',
+        f'  </picture>',
         '</div>',
         '<br>'
     ]
@@ -136,7 +151,7 @@ def main():
     # Footer
     L += [
         '<div align="center">',
-        '<code>[EOF] CONNECTION_TERMINATED</code>',
+        '  <img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=0:0D1117,50:00FF87,100:0D1117&section=footer"/>',
         '</div>'
     ]
 

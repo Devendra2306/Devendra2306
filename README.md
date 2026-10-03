@@ -1,63 +1,79 @@
 <div align="center">
-<code>
-██████╗ ███████╗██╗   ██╗███████╗███╗   ██╗██████╗ ██████╗  █████╗ 
-██╔══██╗██╔════╝██║   ██║██╔════╝████╗  ██║██╔══██╗██╔══██╗██╔══██╗
-██║  ██║█████╗  ██║   ██║█████╗  ██╔██╗ ██║██║  ██║██████╔╝███████║
-██║  ██║██╔══╝  ╚██╗ ██╔╝██╔══╝  ██║╚██╗██║██║  ██║██╔══██╗██╔══██║
-██████╔╝███████╗ ╚████╔╝ ███████╗██║ ╚████║██████╔╝██║  ██║██║  ██║
-╚═════╝ ╚══════╝  ╚═══╝  ╚══════╝╚═╝  ╚═══╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
-</code>
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=250&color=0:0D1117,50:00FF87,100:0D1117&text=DEVENDRA%20DIWAKAR&fontSize=50&fontAlignY=35&animation=fadeIn&fontColor=00FF87&desc=AI%20%2F%20ML%20%26%20Backend%20Engineer&descAlignY=55&descSize=20"/>
 </div>
 <br>
-<div align="center">
-  <b><a href="https://github.com/Devendra2306">GITHUB_DATA_LINK</a></b> // <b><a href="mailto:devdiwakar27@gmail.com">SECURE_COMM_CHANNEL</a></b> // <b><a href="https://www.linkedin.com/in/devendra-divakar-9649a32a4/">NETWORK_NODE</a></b>
-</div>
-<br><hr>
-### <code>[SYS_ADMIN] ./initialize_profile.sh</code>
-
-```json
-{
-  "operator": "Devendra Diwakar",
-  "classification": "AI/ML & Backend Engineer",
-  "objective": "I build the layer between "AI demo" and "thing that runs in production" — retrieval pipelines that return the right chunk, APIs that hold up under load, and systems shipped end to end.",
-  "availability": "AI/ML + Backend internships (2026–27)"
-}
-```
-
-### <code>[SYS_ADMIN] cat /etc/infrastructure_stack.yaml</code>
-
-```yaml
-ai: ["Python", "LangChain", "RAG", "ChromaDB", "Gemini API", "PyTorch"]
-backend: ["FastAPI", "Node.js", "Express", "Django", "PostgreSQL", "Prisma", "DynamoDB"]
-cloud: ["AWS (Lambda, S3, API Gateway)", "Docker", "Render", "Vercel"]
-frontend: ["React", "Vite", "TailwindCSS"]
-languages: ["Python", "JavaScript", "Java", "C++"]
-```
-
-### <code>[SYS_ADMIN] docker ps --format "table {{.Status}}	{{.Names}}	{{.Ports}}"</code>
-
-| STATUS | MODULE_NAME | SPECIFICATION_OVERVIEW |
-|:---:|:---|:---|
-| 🟢 `UP` | **[RAG DOCUMENT Q&A](https://github.com/Devendra2306/CHAT-BOT-)** | Upload a document, ask in plain language, get answers grounded in the text with cited sources. <br> <sub>`STACK: React, FastAPI, LangChain, ChromaDB, Gemini API`</sub> |
-| 🟢 `UP` | **[CLOUDVAULT](https://github.com/Devendra2306/cloudvault-storage)** | Drive-style cloud storage with auth, relational data modelling and S3-backed files. <br> <sub>`STACK: React, Node.js, PostgreSQL, Prisma, AWS S3`</sub> |
-| 🟢 `UP` | **[AQI MONITORING PLATFORM](https://github.com/Devendra2306/AIR-QUALITY)** | Real-time and historical air-quality analytics with a live map, trends and data-freshness checks. <br> <sub>`STACK: Python, DuckDB, Dash, OpenAQ API`</sub> |
-
-
-### <code>[SYS_ADMIN] htop --filter "current_tasks"</code>
+### 💻 Terminal Identity
 
 ```bash
-  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-1023 devendra  20   0   9.8g   4.2g   2.1g R  99.9   1.2   0:00.00 Building a RAG document Q&A system (FastAPI, LangChain, ChromaDB, Gemini)
-1046 devendra  20   0   9.8g   4.2g   2.1g R  99.9   1.2   0:00.00 Learning: advanced RAG evaluation, LLMOps, system design
+Devendra2306@ai-infrastructure:~$ neofetch
+
+        ..:::::::::..             -------------------
+    ..:::aad8888888baa:::..       OS:      AI/ML Infrastructure Engine
+  .::::d:?88888888888?::8b::::.   Host:    Devendra Diwakar
+ .:::d8888:?88888888??a888888b::. Kernel:  Backend Engineering (Python, Node)
+ :::d8888888a8888888aa8888888b::: Uptime:  24/7/365
+ ::::?8888888888888888888888?:::: Shell:   FastAPI, LangChain, React
+  ::::?88888888888888888888?::::  Contact: devdiwakar27@gmail.com
+    ::::?8888888888888888?::::    Status:  Available for 2026-27 Internships
+        ..:::::::::::..           
 ```
 
-### <code>[SYS_ADMIN] ./render_telemetry.py</code>
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=3000&pause=1000&color=00FF87&center=true&vCenter=true&width=800&lines=>_Initializing+neural+pathways...;>_Deploying+RAG+Document+Q%26A+System...;>_Compiling+cloud+infrastructure...;>_System+Online.+Welcome." />
+</div>
+<br>
+### 🏆 Achievements
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Devendra2306&show_icons=true&theme=matrix&bg_color=000000&title_color=00FF00&icon_color=00FF00&text_color=00FF00&border_color=00FF00&hide_border=true" height="170"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Devendra2306&layout=compact&theme=matrix&bg_color=000000&title_color=00FF00&text_color=00FF00&border_color=00FF00&hide_border=true" height="170"/>
+  <a href="https://github.com/Devendra2306"><img src="https://github-profile-trophy.vercel.app/?username=Devendra2306&theme=dracula&column=7&row=1&margin-w=15&margin-h=15&no-bg=false&no-frame=false" alt="Trophies" /></a>
+</div>
+<br>
+### 🚀 Core Subsystems (Deployed Projects)
+
+#### 🔴 🟡 🟢 `RAG Document Q&A`
+> **Mission:** Upload a document, ask in plain language, get answers grounded in the text with cited sources.
+> **Stack:** `React` `FastAPI` `LangChain` `ChromaDB` `Gemini API`
+> **Link:** [github.com/Devendra2306/CHAT-BOT-](https://github.com/Devendra2306/CHAT-BOT-)
+
+#### 🔴 🟡 🟢 `CloudVault`
+> **Mission:** Drive-style cloud storage with auth, relational data modelling and S3-backed files.
+> **Stack:** `React` `Node.js` `PostgreSQL` `Prisma` `AWS S3`
+> **Link:** [github.com/Devendra2306/cloudvault-storage](https://github.com/Devendra2306/cloudvault-storage)
+
+#### 🔴 🟡 🟢 `AQI Monitoring Platform`
+> **Mission:** Real-time and historical air-quality analytics with a live map, trends and data-freshness checks.
+> **Stack:** `Python` `DuckDB` `Dash` `OpenAQ API`
+> **Link:** [github.com/Devendra2306/AIR-QUALITY](https://github.com/Devendra2306/AIR-QUALITY)
+
+### ⚙️ System Analytics & Tech Stack
+
+<table align="center" width="100%">
+<tr>
+  <td width="50%" align="center">
+    <b>Active Tech Stack</b><br><br>
+    <img src="https://skillicons.dev/icons?i=py,js,java,cpp,react,tailwind,vite&perline=7" /><br>
+    <img src="https://skillicons.dev/icons?i=fastapi,nodejs,express,django,postgres,prisma,dynamodb&perline=7" /><br>
+    <img src="https://skillicons.dev/icons?i=aws,docker,vercel,git,github,postman&perline=6" />
+  </td>
+  <td width="50%" align="center">
+    <b>Activity Radar</b><br><br>
+    <img src="https://github-readme-stats.vercel.app/api?username=Devendra2306&show_icons=true&theme=dracula&bg_color=0D1117&title_color=00FF87&icon_color=00FF87&text_color=ffffff&border_color=00FF87&hide_border=true" height="155"/>
+  </td>
+</tr>
+</table>
+<br>
+### 🐍 Contribution Activity
+
+> *Note: The animated snake is generated daily via GitHub Actions.*
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Devendra2306/Devendra2306/output/dist/github-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Devendra2306/Devendra2306/output/dist/github-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Devendra2306/Devendra2306/output/dist/github-snake.svg">
+  </picture>
 </div>
 <br>
 <div align="center">
-<code>[EOF] CONNECTION_TERMINATED</code>
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=0:0D1117,50:00FF87,100:0D1117&section=footer"/>
 </div>
