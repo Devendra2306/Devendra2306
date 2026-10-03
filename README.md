@@ -1,86 +1,63 @@
 <div align="center">
-  <p align="center">
-    <a href="https://www.linkedin.com/in/devendra-divakar-9649a32a4/" target="_blank">
-      <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-    </a>
-    <a href="https://github.com/Devendra2306" target="_blank">
-      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-    </a>
-    <a href="mailto:devdiwakar27@gmail.com" target="_blank">
-      <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-    </a>
-  </p>
-  
-  <p align="center">
-    <img src="https://komarev.com/ghpvc/?username=Devendra2306&label=PROFILE+VIEWS&color=00FF87&style=for-the-badge" alt="Profile Views"/>
-    <img src="https://img.shields.io/github/followers/Devendra2306?style=for-the-badge&color=60EFFF" alt="Followers"/>
-  </p>
+<code>
+██████╗ ███████╗██╗   ██╗███████╗███╗   ██╗██████╗ ██████╗  █████╗ 
+██╔══██╗██╔════╝██║   ██║██╔════╝████╗  ██║██╔══██╗██╔══██╗██╔══██╗
+██║  ██║█████╗  ██║   ██║█████╗  ██╔██╗ ██║██║  ██║██████╔╝███████║
+██║  ██║██╔══╝  ╚██╗ ██╔╝██╔══╝  ██║╚██╗██║██║  ██║██╔══██╗██╔══██║
+██████╔╝███████╗ ╚████╔╝ ███████╗██║ ╚████║██████╔╝██║  ██║██║  ██║
+╚═════╝ ╚══════╝  ╚═══╝  ╚══════╝╚═╝  ╚═══╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+</code>
 </div>
+<br>
+<div align="center">
+  <b><a href="https://github.com/Devendra2306">GITHUB_DATA_LINK</a></b> // <b><a href="mailto:devdiwakar27@gmail.com">SECURE_COMM_CHANNEL</a></b> // <b><a href="https://www.linkedin.com/in/devendra-divakar-9649a32a4/">NETWORK_NODE</a></b>
+</div>
+<br><hr>
+### <code>[SYS_ADMIN] ./initialize_profile.sh</code>
 
-### 👨‍💻 About Me
+```json
+{
+  "operator": "Devendra Diwakar",
+  "classification": "AI/ML & Backend Engineer",
+  "objective": "I build the layer between "AI demo" and "thing that runs in production" — retrieval pipelines that return the right chunk, APIs that hold up under load, and systems shipped end to end.",
+  "availability": "AI/ML + Backend internships (2026–27)"
+}
+```
 
-<br/>
+### <code>[SYS_ADMIN] cat /etc/infrastructure_stack.yaml</code>
 
-> 💡 **Welcome to my personal digital showcase!** I build the layer between "AI demo" and "thing that runs in production" — retrieval pipelines that return the right chunk, APIs that hold up under load, and systems shipped end to end.
-<br/>
+```yaml
+ai: ["Python", "LangChain", "RAG", "ChromaDB", "Gemini API", "PyTorch"]
+backend: ["FastAPI", "Node.js", "Express", "Django", "PostgreSQL", "Prisma", "DynamoDB"]
+cloud: ["AWS (Lambda, S3, API Gateway)", "Docker", "Render", "Vercel"]
+frontend: ["React", "Vite", "TailwindCSS"]
+languages: ["Python", "JavaScript", "Java", "C++"]
+```
 
-### 💻 What I'm Doing Currently
+### <code>[SYS_ADMIN] docker ps --format "table {{.Status}}	{{.Names}}	{{.Ports}}"</code>
 
-- 🔭 I’m currently working on **Building a RAG document Q&A system (FastAPI, LangChain, ChromaDB, Gemini)**
-- 🔭 I’m currently working on **Learning: advanced RAG evaluation, LLMOps, system design**
-- 👯 I’m looking to collaborate on **Open Source Projects**
-- 💬 Ask me about **AI, ML, and Backend Development**
-- ⚡ Fun fact: **Code Creates Reality**
+| STATUS | MODULE_NAME | SPECIFICATION_OVERVIEW |
+|:---:|:---|:---|
+| 🟢 `UP` | **[RAG DOCUMENT Q&A](https://github.com/Devendra2306/CHAT-BOT-)** | Upload a document, ask in plain language, get answers grounded in the text with cited sources. <br> <sub>`STACK: React, FastAPI, LangChain, ChromaDB, Gemini API`</sub> |
+| 🟢 `UP` | **[CLOUDVAULT](https://github.com/Devendra2306/cloudvault-storage)** | Drive-style cloud storage with auth, relational data modelling and S3-backed files. <br> <sub>`STACK: React, Node.js, PostgreSQL, Prisma, AWS S3`</sub> |
+| 🟢 `UP` | **[AQI MONITORING PLATFORM](https://github.com/Devendra2306/AIR-QUALITY)** | Real-time and historical air-quality analytics with a live map, trends and data-freshness checks. <br> <sub>`STACK: Python, DuckDB, Dash, OpenAQ API`</sub> |
 
-### 🚀 Featured Projects
 
-<br/>
+### <code>[SYS_ADMIN] htop --filter "current_tasks"</code>
 
-#### 1. 🌟 [RAG Document Q&A](https://github.com/Devendra2306/CHAT-BOT-)
-- 📝 **Description**: Upload a document, ask in plain language, get answers grounded in the text with cited sources.
-- 🛠️ **Tech Stack**: `React` `FastAPI` `LangChain` `ChromaDB` `Gemini API`
-- 🔗 **Repository**: [github.com/Devendra2306/CHAT-BOT-](https://github.com/Devendra2306/CHAT-BOT-)
+```bash
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+1023 devendra  20   0   9.8g   4.2g   2.1g R  99.9   1.2   0:00.00 Building a RAG document Q&A system (FastAPI, LangChain, ChromaDB, Gemini)
+1046 devendra  20   0   9.8g   4.2g   2.1g R  99.9   1.2   0:00.00 Learning: advanced RAG evaluation, LLMOps, system design
+```
 
-#### 2. 🌟 [CloudVault](https://github.com/Devendra2306/cloudvault-storage)
-- 📝 **Description**: Drive-style cloud storage with auth, relational data modelling and S3-backed files.
-- 🛠️ **Tech Stack**: `React` `Node.js` `PostgreSQL` `Prisma` `AWS S3`
-- 🔗 **Repository**: [github.com/Devendra2306/cloudvault-storage](https://github.com/Devendra2306/cloudvault-storage)
-
-#### 3. 🌟 [AQI Monitoring Platform](https://github.com/Devendra2306/AIR-QUALITY)
-- 📝 **Description**: Real-time and historical air-quality analytics with a live map, trends and data-freshness checks.
-- 🛠️ **Tech Stack**: `Python` `DuckDB` `Dash` `OpenAQ API`
-- 🔗 **Repository**: [github.com/Devendra2306/AIR-QUALITY](https://github.com/Devendra2306/AIR-QUALITY)
+### <code>[SYS_ADMIN] ./render_telemetry.py</code>
 
 <div align="center">
-  ⭐ <i>Explore more projects & repositories on my <b><a href="https://github.com/Devendra2306?tab=repositories" target="_blank">GitHub Profile</a></b>!</i>
+  <img src="https://github-readme-stats.vercel.app/api?username=Devendra2306&show_icons=true&theme=matrix&bg_color=000000&title_color=00FF00&icon_color=00FF00&text_color=00FF00&border_color=00FF00&hide_border=true" height="170"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Devendra2306&layout=compact&theme=matrix&bg_color=000000&title_color=00FF00&text_color=00FF00&border_color=00FF00&hide_border=true" height="170"/>
 </div>
-<br/>
-
-### ⚙️ Tools & Technologies
-
+<br>
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=c,cpp,java,py,js,html,css&perline=7" />
-  <br>
-  <img src="https://skillicons.dev/icons?i=react,nodejs,express,django,tailwind,vite&perline=7" />
-  <br>
-  <img src="https://skillicons.dev/icons?i=postgres,mysql,prisma,dynamodb,aws&perline=8" />
-  <br>
-  <img src="https://skillicons.dev/icons?i=git,github,docker,vercel,render,postman&perline=9" />
+<code>[EOF] CONNECTION_TERMINATED</code>
 </div>
-
-<br/>
-
-### 📈 GitHub Analytics
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Devendra2306&theme=github-compact&color=00FF87&line=00FF87&point=00FF87&area=true&area_color=00FF87&title_color=00FF87&text_color=ffffff&bg_color=0D1117&radius=16" alt="Activity Graph" width="100%"/>
-</div>
-
-<br/>
-
-<div data-importer="stats" align="center">
-  <img src="https://streak-stats.demolab.com?user=Devendra2306&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5&order=3" height="150" alt="streak graph"  />
-  <img src="https://github-profile-trophy.vercel.app/?username=Devendra2306&theme=dracula&column=-1&row=1&margin-w=8&margin-h=8&no-bg=false&no-frame=false" height="150" alt="trophy graph"  />
-</div>
-
-<br/>
