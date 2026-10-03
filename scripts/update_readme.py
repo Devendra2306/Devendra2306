@@ -156,7 +156,19 @@ def main():
         '<br>'
     ]
 
-    # 6. Animated Snake
+    # 6. 3D Contribution Graph (Requires Action)
+    L += [
+        '<h2 align="center">✦ 3D Activity Map ✦</h2>',
+        '<br>',
+        '<div align="center">',
+        f'  <img src="https://raw.githubusercontent.com/{user}/{user}/main/profile-3d-contrib/profile-night-view.svg" alt="3D Contribution Graph" width="100%"/>',
+        '</div>',
+        '<br><br>',
+        '---',
+        '<br>'
+    ]
+
+    # 7. Animated Snake
     L += [
         '<h2 align="center">✦ Contribution Heatmap ✦</h2>',
         '<br>',
