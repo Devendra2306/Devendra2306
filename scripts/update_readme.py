@@ -57,7 +57,7 @@ def main():
     # 1. Animated Tech Banner
     L += [
         '<div align="center">',
-        '  <img src="https://capsule-render.vercel.app/api?type=waving&height=250&color=0:0D1117,50:00FF87,100:0D1117&text=DEVENDRA%20DIWAKAR&fontSize=50&fontAlignY=35&animation=fadeIn&fontColor=00FF87&desc=AI%20%2F%20ML%20%26%20Backend%20Engineer&descAlignY=55&descSize=20"/>',
+        '  <img src="https://capsule-render.vercel.app/api?type=waving&amp;height=250&amp;color=0:0D1117,50:00FF87,100:0D1117&amp;text=DEVENDRA%20DIWAKAR&amp;fontSize=50&amp;fontAlignY=35&amp;animation=fadeIn&amp;fontColor=00FF87&amp;desc=AI%20%2F%20ML%20%26%20Backend%20Engineer&amp;descAlignY=55&amp;descSize=20"/>',
         '</div>',
         '<br>'
     ]
@@ -85,7 +85,7 @@ def main():
     # 3. Animated Typing Status
     L += [
         '<div align="center">',
-        '  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=3000&pause=1000&color=00FF87&center=true&vCenter=true&width=800&lines=>_Initializing+neural+pathways...;>_Deploying+RAG+Document+Q%26A+System...;>_Compiling+cloud+infrastructure...;>_System+Online.+Welcome." />',
+        '  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;weight=600&amp;size=18&amp;duration=3000&amp;pause=1000&amp;color=00FF87&amp;center=true&amp;vCenter=true&amp;width=800&amp;lines=>_Initializing+neural+pathways...;>_Deploying+RAG+Document+Q%26A+System...;>_Compiling+cloud+infrastructure...;>_System+Online.+Welcome." />',
         '</div>',
         '<br>'
     ]
@@ -95,7 +95,7 @@ def main():
         '### 🏆 Achievements',
         '',
         '<div align="center">',
-        f'  <a href="https://github.com/{user}"><img src="https://github-profile-trophy.vercel.app/?username={user}&theme=dracula&column=7&row=1&margin-w=15&margin-h=15&no-bg=false&no-frame=false" alt="Trophies" /></a>',
+        f'  <a href="https://github.com/{user}"><img src="https://github-profile-trophy.vercel.app/?username={user}&amp;theme=dracula&amp;column=7&amp;row=1&amp;margin-w=15&amp;margin-h=15&amp;no-bg=false&amp;no-frame=false" alt="Trophies" /></a>',
         '</div>',
         '<br>'
     ]
@@ -119,13 +119,13 @@ def main():
         '<tr>',
         '  <td width="50%" align="center">',
         '    <b>Active Tech Stack</b><br><br>',
-        '    <img src="https://skillicons.dev/icons?i=py,js,java,cpp,react,tailwind,vite&perline=7" /><br>',
-        '    <img src="https://skillicons.dev/icons?i=fastapi,nodejs,express,django,postgres,prisma,dynamodb&perline=7" /><br>',
-        '    <img src="https://skillicons.dev/icons?i=aws,docker,vercel,git,github,postman&perline=6" />',
+        '    <img src="https://skillicons.dev/icons?i=py,js,java,cpp,react,tailwind,vite&amp;perline=7" /><br>',
+        '    <img src="https://skillicons.dev/icons?i=fastapi,nodejs,express,django,postgres,prisma,dynamodb&amp;perline=7" /><br>',
+        '    <img src="https://skillicons.dev/icons?i=aws,docker,vercel,git,github,postman&amp;perline=6" />',
         '  </td>',
         '  <td width="50%" align="center">',
         '    <b>Activity Radar</b><br><br>',
-        f'    <img src="https://github-readme-stats.vercel.app/api?username={user}&show_icons=true&theme=dracula&bg_color=0D1117&title_color=00FF87&icon_color=00FF87&text_color=ffffff&border_color=00FF87&hide_border=true" height="155"/>',
+        f'    <img src="https://github-readme-stats.vercel.app/api?username={user}&amp;show_icons=true&amp;theme=dracula&amp;bg_color=0D1117&amp;title_color=00FF87&amp;icon_color=00FF87&amp;text_color=ffffff&amp;border_color=00FF87&amp;hide_border=true" height="155"/>',
         '  </td>',
         '</tr>',
         '</table>',
@@ -151,7 +151,7 @@ def main():
     # Footer
     L += [
         '<div align="center">',
-        '  <img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=0:0D1117,50:00FF87,100:0D1117&section=footer"/>',
+        '  <img src="https://capsule-render.vercel.app/api?type=waving&amp;height=100&amp;color=0:0D1117,50:00FF87,100:0D1117&amp;section=footer"/>',
         '</div>'
     ]
 
