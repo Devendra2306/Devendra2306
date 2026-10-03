@@ -140,9 +140,9 @@ def main():
         '',
         '<div align="center">',
         f'  <picture>',
-        f'    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/{user}/{user}/output/dist/github-snake-dark.svg">',
-        f'    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/{user}/{user}/output/dist/github-snake.svg">',
-        f'    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/{user}/{user}/output/dist/github-snake.svg">',
+        f'    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/{user}/{user}/output/github-snake-dark.svg">',
+        f'    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/{user}/{user}/output/github-snake.svg">',
+        f'    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/{user}/{user}/output/github-snake.svg">',
         f'  </picture>',
         '</div>',
         '<br>'
