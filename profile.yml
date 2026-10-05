@@ -12,7 +12,7 @@
 # =====================================================================
 
 github: Devendra2306
-name: Devendra Diwakar
+name: Devendra Divakar
 headline: AI/ML & Backend Engineer
 tagline: >-
   I build the layer between "AI demo" and "thing that runs in production" —
@@ -27,7 +27,7 @@ currently:
 links:
   email: devdiwakar27@gmail.com
   # CHECK THIS URL: your old README says "divakar" but your name is "Diwakar"
-  linkedin: https://www.linkedin.com/in/devendra-diwakar-9649a32a4/
+  linkedin: https://www.linkedin.com/in/devendra-divakar-9649a32a4/
   portfolio: ""          # add a portfolio URL if you have one
   resume: ""             # link to a PDF in this repo or Drive, e.g. resume.pdf
 

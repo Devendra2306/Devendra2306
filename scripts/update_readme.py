@@ -59,12 +59,13 @@ def main():
 
     L = []
     
-    # 1. Premium Gradient Banner
+    # 1. Premium Typography Banner
     L += [
         '<div align="center">',
-        f'  <img src="https://capsule-render.vercel.app/api?type=waving&amp;height=280&amp;color=gradient&amp;customColorList=8A2387,E94057,F27121&amp;text={name_encoded}&amp;fontSize=55&amp;fontAlignY=35&amp;animation=fadeIn&amp;fontColor=ffffff&amp;desc={headline_encoded}&amp;descAlignY=55&amp;descSize=22"/>',
+        f'  <h1 align="center">Hi, I\'m {cfg["name"]} 👋</h1>',
+        f'  <h3 align="center">{cfg["headline"]}</h3>',
         '</div>',
-        '<br>'
+        '<br><br>'
     ]
 
     # 2. Sleek Typing Subheader & Social Links
@@ -121,26 +122,28 @@ def main():
             
         L.append('  </tr>')
         
-    L += ['</table>', '<br><br>', '---', '<br>']
+        
+    L += ['</table>', '<br><br><br>', '---', '<br><br>']
 
     # 4. Tech Stack & Arsenal
     L += [
+        '<br><br>',
         '<h2 align="center">✦ Tech Arsenal ✦</h2>',
-        '<br>',
+        '<br><br>',
         '<p align="center">',
         '  <img src="https://skillicons.dev/icons?i=python,js,java,cpp,react,tailwind,vite&amp;perline=7&amp;theme=dark" /><br><br>',
         '  <img src="https://skillicons.dev/icons?i=fastapi,nodejs,express,django,postgres,prisma,dynamodb&amp;perline=7&amp;theme=dark" /><br><br>',
         '  <img src="https://skillicons.dev/icons?i=aws,docker,vercel,git,github,postman&amp;perline=6&amp;theme=dark" />',
         '</p>',
-        '<br><br>',
+        '<br><br><br>',
         '---',
-        '<br>'
+        '<br><br>'
     ]
 
     # 5. Telemetry & Stats (Bento Box 2)
     L += [
         '<h2 align="center">✦ Live Telemetry ✦</h2>',
-        '<br>',
+        '<br><br>',
         '<table align="center" width="100%" style="border-collapse: collapse;">',
         '  <tr>',
         '    <td width="50%" align="center" style="padding: 10px;">',
@@ -151,27 +154,27 @@ def main():
         '    </td>',
         '  </tr>',
         '</table>',
-        '<br><br>',
+        '<br><br><br>',
         '---',
-        '<br>'
+        '<br><br>'
     ]
 
     # 6. 3D Contribution Graph (Requires Action)
     L += [
         '<h2 align="center">✦ 3D Activity Map ✦</h2>',
-        '<br>',
+        '<br><br>',
         '<div align="center">',
         f'  <img src="https://raw.githubusercontent.com/{user}/{user}/main/profile-3d-contrib/profile-night-view.svg" alt="3D Contribution Graph" width="100%"/>',
         '</div>',
-        '<br><br>',
+        '<br><br><br>',
         '---',
-        '<br>'
+        '<br><br>'
     ]
 
     # 7. Animated Snake
     L += [
         '<h2 align="center">✦ Contribution Heatmap ✦</h2>',
-        '<br>',
+        '<br><br>',
         '<div align="center">',
         f'  <picture>',
         f'    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/{user}/{user}/output/github-snake-dark.svg">',
@@ -179,13 +182,13 @@ def main():
         f'    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/{user}/{user}/output/github-snake.svg">',
         f'  </picture>',
         '</div>',
-        '<br>'
+        '<br><br>'
     ]
 
     # Footer
     L += [
         '<div align="center">',
-        '  <img src="https://capsule-render.vercel.app/api?type=waving&amp;height=120&amp;color=gradient&amp;customColorList=8A2387,E94057,F27121&amp;section=footer"/>',
+        '  <p><i>Building the layer between AI demos and production.</i></p>',
         '</div>'
     ]
 
