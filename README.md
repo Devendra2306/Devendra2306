@@ -1,15 +1,16 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&amp;height=280&amp;color=gradient&amp;customColorList=8A2387,E94057,F27121&amp;text=DEVENDRA%20DIWAKAR&amp;fontSize=55&amp;fontAlignY=35&amp;animation=fadeIn&amp;fontColor=ffffff&amp;desc=AI/ML%20%26%20Backend%20Engineer&amp;descAlignY=55&amp;descSize=22"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=280&color=gradient&customColorList=8A2387,E94057,F27121&text=DEVENDRA%20DIWAKAR&fontSize=55&fontAlignY=35&animation=fadeIn" width="100%"/>
 </div>
 <br>
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Inter&amp;weight=500&amp;size=20&amp;duration=4000&amp;pause=1000&amp;color=E94057&amp;center=true&amp;vCenter=true&amp;width=800&amp;lines=Bridging+the+gap+between+AI+demos+and+production.;Architecting+scalable+backend+infrastructure.;Available+for+2026-27+Internships." />
+  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=20&duration=4000&pause=1000&color=E94057&center=true&vCenter=true&width=800&lines=🚀+Full-Stack+Developer;🤖+AI+%26+LLM+Enthusiast;☁️+Cloud+Architecture;💡+Problem+Solver" width="100%"/>
   <br><br>
-  <a href="https://www.linkedin.com/in/devendra-diwakar-9649a32a4/"><img src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" /></a>
-  <a href="mailto:devdiwakar27@gmail.com"><img src="https://img.shields.io/badge/Email-000000?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" /></a>
-  <a href="https://github.com/Devendra2306"><img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/devendra-diwakar-9649a32a4/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="mailto:devdiwakar27@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="https://github.com/Devendra2306"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
 </div>
 <br><br>
+
 ---
 <br>
 <h2 align="center">✦ Engineered Solutions ✦</h2>
@@ -40,51 +41,54 @@
   </tr>
 </table>
 <br><br>
+
 ---
 <br>
 <h2 align="center">✦ Tech Arsenal ✦</h2>
 <br>
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,js,java,cpp,react,tailwind,vite&amp;perline=7&amp;theme=dark" /><br><br>
-  <img src="https://skillicons.dev/icons?i=fastapi,nodejs,express,django,postgres,prisma,dynamodb&amp;perline=7&amp;theme=dark" /><br><br>
-  <img src="https://skillicons.dev/icons?i=aws,docker,vercel,git,github,postman&amp;perline=6&amp;theme=dark" />
+  <img src="https://skillicons.dev/icons?i=python,js,java,cpp,react,tailwind,vite&perline=7&theme=dark" alt="Frontend Stack" /><br><br>
+  <img src="https://skillicons.dev/icons?i=fastapi,nodejs,express,django,postgres,prisma,dynamodb&perline=7&theme=dark" alt="Backend Stack" /><br><br>
+  <img src="https://skillicons.dev/icons?i=aws,docker,vercel,git,github,postman&perline=6&theme=dark" alt="DevOps & Tools" />
 </p>
 <br><br>
+
 ---
 <br>
-<h2 align="center">✦ Live Telemetry ✦</h2>
+<h2 align="center">✦ GitHub Statistics ✦</h2>
 <br>
 <table align="center" width="100%" style="border-collapse: collapse;">
   <tr>
     <td width="50%" align="center" style="padding: 10px;">
-      <img src="https://github-readme-stats.vercel.app/api?username=Devendra2306&amp;show_icons=true&amp;theme=transparent&amp;bg_color=00000000&amp;title_color=E94057&amp;icon_color=F27121&amp;text_color=A0A0A0&amp;hide_border=true" />
+      <img src="https://github-readme-stats.vercel.app/api?username=Devendra2306&show_icons=true&theme=transparent&bg_color=00000000&title_color=E94057&icon_color=F27121&text_color=FFFFFF&hide_border=true" alt="GitHub Stats" width="100%"/>
     </td>
     <td width="50%" align="center" style="padding: 10px;">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Devendra2306&amp;layout=compact&amp;theme=transparent&amp;bg_color=00000000&amp;title_color=E94057&amp;text_color=A0A0A0&amp;hide_border=true" />
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Devendra2306&layout=compact&theme=transparent&bg_color=00000000&title_color=E94057&text_color=FFFFFF&hide_border=true" alt="Top Languages" width="100%"/>
     </td>
   </tr>
 </table>
 <br><br>
+
 ---
 <br>
-<h2 align="center">✦ 3D Activity Map ✦</h2>
+<h2 align="center">✦ Activity & Contributions ✦</h2>
 <br>
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Devendra2306/Devendra2306/main/profile-3d-contrib/profile-night-view.svg" alt="3D Contribution Graph" width="100%"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Devendra2306&theme=react-dark&bg_color=00000000&color=E94057&line=F27121&point=E94057&hide_border=true" alt="Contribution Graph" width="100%"/>
 </div>
 <br><br>
+
 ---
 <br>
-<h2 align="center">✦ Contribution Heatmap ✦</h2>
+<h2 align="center">✦ Let's Connect ✦</h2>
 <br>
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Devendra2306/Devendra2306/output/github-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Devendra2306/Devendra2306/output/github-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Devendra2306/Devendra2306/output/github-snake.svg">
-  </picture>
+  <p>Always open to collaborations, exciting projects, and innovative ideas! 🚀</p>
+  <a href="https://www.linkedin.com/in/devendra-diwakar-9649a32a4/"><strong>LinkedIn</strong></a> • 
+  <a href="mailto:devdiwakar27@gmail.com"><strong>Email</strong></a> • 
+  <a href="https://github.com/Devendra2306"><strong>GitHub</strong></a>
 </div>
 <br>
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&amp;height=120&amp;color=gradient&amp;customColorList=8A2387,E94057,F27121&amp;section=footer"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=gradient&customColorList=8A2387,E94057,F27121&section=footer" width="100%"/>
 </div>
